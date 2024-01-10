@@ -11,6 +11,7 @@ const footer = () => {
           
           <Image src={logo} className="w-[100%]" alt="logo" />
           <p>sugfudshvdfgvfvfdavdfv xcvxcvx</p>
+          <p>okdjvgfdbdfbjdfabdfbdfb</p>
         
       </div>
        </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "/public/Images/Rectangle.png";
 import { TbMenuDeep } from "react-icons/tb";
-import Theme from "@/components/Theme";
+import Theme from "@/components/theme";
 import { MdClose } from "react-icons/md";
 
 export default function Header() {
