@@ -43,7 +43,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center items-center relative pt-10 md:pt-0 lg:pt-0">
-            <Image src={png} alt="image"/>
+            <Image src={png} alt="image" />
             <div className="w-[120px] h-[130px] lg:w-[160px] lg:h-[180px] p-[20px] rounded-[26px] absolute bg-[#fff] -right-7 bottom-7 lg:right-12 lg:bottom-10 flex flex-col justify-center items-center gap-5 dark:text-white">
               <VscProject size={40} color="#E5B250" />
               <p className="text-[20px] lg:text-[30px] font-bold text-center text-[#080C2E] leading-none">
@@ -68,7 +68,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <section className="h-[100%] max-w-screen-xl mx-auto px-[16px]" id="features">
+        <section
+          className="h-[100%] max-w-screen-xl mx-auto px-[16px]"
+          id="features"
+        >
           <h1 className="pt-20 text-[#080C2E] text-[23px] lg:text-[46px] font-semibold text-center dark:text-white">
             Welcome To Digital Agency
           </h1>
@@ -76,10 +79,13 @@ export default function Home() {
             <Card />
           </div>
         </section>
-        <section className="h-[100%] max-w-screen-xl mx-auto px-[16px] flex flex-col justify-center items-center" id="services">
+        <section
+          className="h-[100%] max-w-screen-xl mx-auto px-[16px] flex flex-col justify-center items-center"
+          id="services"
+        >
           <div className="flex flex-col lg:flex lg:flex-row pt-20 gap-0 lg:gap-20">
             <div className="">
-              <Image src={communication} width={500} alt="image"/>
+              <Image src={communication} width={500} alt="image" />
             </div>
             <div className="">
               <h1 className="text-[#080C2E] text-[20px] lg:text-[46px] font-semibold dark:text-white leading-normal">
@@ -134,12 +140,12 @@ export default function Home() {
               </div>
             </div>
             <div className="">
-              <Image src={digital} width={400} alt="image"/>
+              <Image src={digital} width={400} alt="image" />
             </div>
           </div>
           <div className="flex flex-col lg:flex lg:flex-row pt-20 gap-10 lg:gap-20">
             <div className="">
-              <Image src={commercial} width={400} alt="image"/>
+              <Image src={commercial} width={400} alt="image" />
             </div>
             <div className="">
               <h1 className="text-[#080C2E] text-[20px] lg:text-[46px] font-semibold dark:text-white leading-normal">
@@ -168,7 +174,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="h-[100%] max-w-screen-xl mx-auto px-[16px] pt-20">
+        <section
+          className="h-[100%] max-w-screen-xl mx-auto px-[16px] pt-20"
+          id="projects"
+        >
           <div className="flex flex-col justify-center items-center pb-10">
             <p className="text-[#080C2E] text-[23px] lg:text-[46px] font-semibold text-center dark:text-white">
               Project Completed
@@ -179,35 +188,35 @@ export default function Home() {
             </p>
           </div>
           <Swiper />
-        </div>
-        <div className="w-full h-auto lg:h-[322px] bg-[#626296] flex items-center dark:bg-black overflow-hidden">
+        </section>
+        <div className="w-full h-auto lg:h-[322px] bg-[#303553] flex items-center dark:bg-black overflow-hidden">
           <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center max-w-screen-xl mx-auto pt-20  px-[16px] py-20 gap-10 lg:gap-[125px] overflow-hidden">
-            <div className="w-[250px] lg:w-[330px] h-[240px] mor relative flex flex-col justify-center items-center">
-              <h1 className="text-[50px] lg:text-[72px] font-bold leading-[96px] text-[#fff] hover:text-[#E5B250]">
+            <div className="w-[250px] lg:w-[336px] h-[151px] mor relative flex flex-col justify-center items-center">
+              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] hover:text-[#E5B250]">
                 100+
               </h1>
               <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] hover:text-[#E5B250]">
                 Clients
               </p>
-              <div className="w-[80px] h-[94px] bg-[#626296] dark:bg-black absolute rotate-45 -bottom-[45px] -right-[35px] bl"></div>
+              <div className="w-[80px] h-[94px] bg-[#303553] dark:bg-black absolute rotate-45 -bottom-[43px] -right-[36px] bl"></div>
             </div>
-            <div className="w-[250px] lg:w-[330px] h-[240px] mor relative flex flex-col justify-center items-center">
-              <h1 className="text-[50px] lg:text-[72px] font-bold leading-[96px] text-[#fff] hover:text-[#E5B250]">
+            <div className="w-[250px] lg:w-[336px] h-[151px] mor relative flex flex-col justify-center items-center">
+              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] hover:text-[#E5B250]">
                 +80%
               </h1>
               <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] hover:text-[#E5B250]">
                 Completed
               </p>
-              <div className="w-[80px] h-[95px] bg-[#626296] dark:bg-black absolute rotate-45 -bottom-[45px] -right-[35px] bl"></div>
+              <div className="w-[80px] h-[95px] bg-[#303553] dark:bg-black absolute rotate-45 -bottom-[43px] -right-[36px] bl"></div>
             </div>
-            <div className="w-[250px] lg:w-[330px] h-[240px] mor relative flex flex-col justify-center items-center sm:mb-20 md:mb-0 lg:mb-0">
-              <h1 className="text-[50px] lg:text-[72px] font-bold leading-[96px] text-[#fff] hover:text-[#E5B250]">
-                1.230+
+            <div className="w-[250px] lg:w-[336px] h-[151px] mor relative flex flex-col justify-center items-center sm:mb-20 md:mb-0 lg:mb-0">
+              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] hover:text-[#E5B250]">
+                1230+
               </h1>
               <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] hover:text-[#E5B250]">
                 New Project
               </p>
-              <div className="w-[80px] h-[95px] bg-[#626296] dark:bg-black absolute rotate-45 -bottom-[45px] -right-[35px] bl"></div>
+              <div className="w-[80px] h-[95px] bg-[#303553] dark:bg-black absolute rotate-45 -bottom-[43px] -right-[36px] bl"></div>
             </div>
           </div>
         </div>
@@ -241,7 +250,8 @@ export default function Home() {
                 <Image
                   src={png1}
                   className=" object-cover object-center w-full h-full"
-                alt="image"/>
+                  alt="image"
+                />
               </div>
               <div className="flex justify-center items-center">
                 <p className="text-center text-[#080C2E] text-[16px] font-bold dark:text-white">
@@ -254,7 +264,8 @@ export default function Home() {
                 <Image
                   src={png2}
                   className=" object-cover object-center w-full h-full"
-                alt="image"/>
+                  alt="image"
+                />
               </div>
               <div className="flex justify-center items-center">
                 <p className="text-center text-[#080C2E] text-[16px] font-bold dark:text-white">
@@ -267,7 +278,8 @@ export default function Home() {
                 <Image
                   src={png3}
                   className=" object-cover object-center w-full h-full"
-                alt="image"/>
+                  alt="image"
+                />
               </div>
               <div className="flex justify-center items-center">
                 <p className="text-center text-[#080C2E] text-[16px] font-bold dark:text-white">
@@ -280,7 +292,8 @@ export default function Home() {
                 <Image
                   src={png4}
                   className=" object-cover object-center w-full h-full"
-                alt="image"/>
+                  alt="image"
+                />
               </div>
               <div className="flex justify-center items-center">
                 <p className="text-center text-[#080C2E] text-[16px] font-bold dark:text-white">
@@ -312,34 +325,36 @@ export default function Home() {
               <p className="text-[#fff] text-[46px] font-semibold">
                 Start Growing Today
               </p>
-              <p className="w-[437px] h-[67px] text-[#fff] text-[16px] font-medium leading-8">
+              {/* <p className="w-[437px] h-[67px] text-[#fff] text-[16px] font-medium leading-8">
                 We provide a variety of servers to grow your users acquisition
                 much user-friendly and boosting up sales.
-              </p>
+              </p> */}
               <div>
-              <button className="rounded-[100px] py-4 px-10 bg-[#E5B250] hover:bg-[#F87B50] text-white dark:bg-white dark:text-black">
-                Contact Us
-              </button>
+                <button className="rounded-[100px] py-4 px-10 bg-[#E5B250] hover:bg-[#F87B50] text-white dark:bg-white dark:text-black">
+                  Contact Us
+                </button>
+              </div>
             </div>
-            </div>
-            <div className="grid grid-cols-3 gap-6">
-              <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
-                <FiGlobe size={40} />
-              </div>
-              <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
-                <FiGlobe size={40} />
-              </div>
-              <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
-                <FiGlobe size={40} />
-              </div>
-              <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
-                <FiGlobe size={40} />
-              </div>
-              <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
-                <FiGlobe size={40} />
-              </div>
-              <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
-                <FiGlobe size={40} />
+            <div className="hidden lg:block">
+              <div className="grid grid-cols-3 gap-6">
+                <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                  <FiGlobe size={40} />
+                </div>
+                <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                  <FiGlobe size={40} />
+                </div>
+                <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                  <FiGlobe size={40} />
+                </div>
+                <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                  <FiGlobe size={40} />
+                </div>
+                <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                  <FiGlobe size={40} />
+                </div>
+                <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                  <FiGlobe size={40} />
+                </div>
               </div>
             </div>
           </div>

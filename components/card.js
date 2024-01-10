@@ -6,7 +6,7 @@ import { BiCube } from "react-icons/bi";
 const card = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-between items-center">
-      <div className="group p-[30px] h-full lg:h-[400px] bg-[#fff] dark:bg-black/5 rounded-[16px] hover:bg-[#F87B50] hover:duration-300 shadow-2xl">
+      <div className="group p-[30px] h-full lg:h-[400px] bg-[#fff] dark:bg-black/5 rounded-[16px] hover:bg-[#F87B50] hover:duration-300 shadow-lg">
         <TbHierarchy3 size={40} color="#E5B250"/>
         <h1 className="text-[#080C2E] text-[16px] lg:text-[22px] font-bold pt-5 group-hover:text-white dark:text-white">
           Chez Nomade Agency
@@ -17,7 +17,7 @@ const card = () => {
           ventes.
         </p>
       </div>
-      <div className="group p-[30px] h-full lg:h-[400px] bg-[#fff]  dark:bg-black/5 rounded-[16px] hover:bg-[#F87B50] hover:duration-300 shadow-2xl">
+      <div className="group p-[30px] h-full lg:h-[400px] bg-[#fff]  dark:bg-black/5 rounded-[16px] hover:bg-[#F87B50] hover:duration-300 shadow-lg">
         <BiCube size={40} color="#E5B250" />
         <h1 className="text-[#080C2E] text-[16px] lg:text-[22px] font-bold pt-5 group-hover:text-white dark:text-white">
           Chez Nomade Agency
@@ -28,7 +28,7 @@ const card = () => {
           ventes.
         </p>
       </div>
-      <div className="group p-[30px] h-full lg:h-[400px] bg-[#fff] dark:bg-black/5 rounded-[16px] hover:bg-[#F87B50] hover:duration-300 shadow-2xl">
+      <div className="group p-[30px] h-full lg:h-[400px] bg-[#fff] dark:bg-black/5 rounded-[16px] hover:bg-[#F87B50] hover:duration-300 shadow-lg">
         <TbHierarchy3 size={40} color="#E5B250" />
         <h1 className="text-[#080C2E] text-[16px] lg:text-[22px] font-bold pt-5 group-hover:text-white dark:text-white">
           Chez Nomade Agency
@@ -39,7 +39,7 @@ const card = () => {
           ventes.
         </p>
       </div>
-      <div className="group p-[30px] h-full lg:h-[400px] bg-[#fff] dark:bg-black/5 rounded-[16px] hover:bg-[#F87B50] hover:duration-300 shadow-2xl">
+      <div className="group p-[30px] h-full lg:h-[400px] bg-[#fff] dark:bg-black/5 rounded-[16px] hover:bg-[#F87B50] hover:duration-300 shadow-lg">
         <TbHierarchy3 size={40} color="#E5B250" />
         <h1 className="text-[#080C2E] text-[16px] lg:text-[22px] font-bold pt-5 group-hover:text-white dark:text-white">
           Chez Nomade Agency

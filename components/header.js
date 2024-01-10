@@ -31,7 +31,7 @@ export default function Header() {
               <Link href="#services">Services</Link>
             </li>
             <li className="hover:text-[#F87B50]">
-              <Link href="/">Projects</Link>
+              <Link href="#projects">Projects</Link>
             </li>
             <li className="hover:text-[#F87B50]">
               <Link href="/">Contact us</Link>
