@@ -1,5 +1,14 @@
-import '@/styles/globals.css'
+import {useRouter} from "next/navigation";
+import "/styles/globals.css"
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const App = ({Component, pageProps})=>{
+  const router = useRouter();
+
+  return(
+    <div key={router.pathname} className="dark:bg-black">
+      <Component {...pageProps}/>
+    </div>
+  )
 }
+
+export default App;

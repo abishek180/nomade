@@ -1,118 +1,351 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Page from "@/components/page";
+import Image from "next/image";
+import png from "/public/Images/Rectangle 3.png";
+import png1 from "/public/Images/jcb.jpg";
+import png2 from "/public/Images/rectangle2.png";
+import png3 from "/public/Images/rectangle3.png";
+import png4 from "/public/Images/rectangle4.png";
+import Swiper from "@/components/swiper";
+import Card from "@/components/card";
+import { FiGlobe } from "react-icons/fi";
+import { VscProject } from "react-icons/vsc";
+import { FaRunning } from "react-icons/fa";
+import communication from "/public/Images/communication.svg";
+import digital from "/public/Images/digital.svg";
+import commercial from "/public/Images/commercial.svg";
+import ImageScroll from "@/components/imagescroll";
+import Accordian from "@/components/accordian";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <Page>
+      <div className="">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-screen-xl mx-auto px-[16px]">
+          <div className="flex flex-col justify-center gap-5">
+            <p className="flex gap-1 text-[#080C2E] font-semibold text-[10px] lg:text-[16px] dark:text-white">
+              <span className="pt-[2px]">
+                <FiGlobe size={10} />{" "}
+              </span>
+              We host more than 120,000 websites
+            </p>
+            <h1 className="text-[40px] lg:text-[70px] text-[#080C2E] font-semibold leading-[100%] pt-10 dark:text-white">
+              Tools that can be used as lectures,
+            </h1>
+            <p className="text-[#5D5D7C] text-[10px] lg:text-[16px] font-medium leading-[20px] pt-3 lg:pt-2">
+              Presentations are tools that can be used as lectures, speeches,
+              reports, and more it is mostly presented.
+            </p>
+            <div>
+              <button className="rounded-[100px] py-4 px-10 bg-[#E5B250] hover:bg-[#F87B50] text-white dark:bg-white dark:text-black">
+                explore more
+              </button>
+            </div>
+          </div>
+          <div className="flex justify-center items-center relative pt-10 md:pt-0 lg:pt-0">
+            <Image src={png} />
+            <div className="w-[120px] h-[130px] lg:w-[160px] lg:h-[180px] p-[20px] rounded-[26px] absolute bg-[#fff] -right-7 bottom-7 lg:right-12 lg:bottom-10 flex flex-col justify-center items-center gap-5 dark:text-white">
+              <VscProject size={40} color="#E5B250" />
+              <p className="text-[20px] lg:text-[30px] font-bold text-center text-[#080C2E] leading-none">
+                1230+{" "}
+                <span className="text-[#5D5D7C] text-[11px] lg:text-[16px] font-normal">
+                  New Projects
+                </span>
+              </p>
+            </div>
+            <div className="w-[220px] h-[80px] lg:w-[270px] lg:h-[96px] p-[20px] rounded-[26px] absolute bg-[#fff] -left-5 -top-1 lg:left-12 lg:-top-8 flex justify-center items-center gap-5">
+              <FaRunning size={40} color="#E5B250" />
+              <p className="text-[16px] lg:text-[20px] font-bold text-center text-[#080C2E]">
+                Super Reliable
+                <br />
+                <span className="text-[#5D5D7C] text-[11px] lg:text-[16px] font-normal">
+                  24/7 Always Active
+                </span>
+              </p>
+            </div>
+            <div className="rounded-[100px] bg-[#E5B250] absolute p-[8px] lg:p-[20px] -right-6 top-10 lg:right-16 lg:top-10">
+              <FiGlobe size={40} color="#fff" />
+            </div>
+          </div>
         </div>
+        <section className="h-[100%] max-w-screen-xl mx-auto px-[16px]" id="features">
+          <h1 className="pt-20 text-[#080C2E] text-[23px] lg:text-[46px] font-semibold text-center dark:text-white">
+            Welcome To Digital Agency
+          </h1>
+          <div className="pt-20">
+            <Card />
+          </div>
+        </section>
+        <section className="h-[100%] max-w-screen-xl mx-auto px-[16px] flex flex-col justify-center items-center" id="services">
+          <div className="flex flex-col lg:flex lg:flex-row pt-20 gap-0 lg:gap-20">
+            <div className="">
+              <Image src={communication} width={500} />
+            </div>
+            <div className="">
+              <h1 className="text-[#080C2E] text-[20px] lg:text-[46px] font-semibold dark:text-white leading-normal">
+                COMMUNICATION PUBLIQUE
+              </h1>
+              <div className="pl-5">
+                <ul className="ul-list text=[#080C2E] text-[12px] lg:text-[16px] font-normal leading-[32px] dark:text-white">
+                  <li>Conseil en communication publique et territorial</li>
+                  <li>
+                    Conception éditoriale et rédactionnelle (magazine, wobzine,
+                    lettre d’information.
+                  </li>
+                  <li>
+                    Création graphique et realisation de support d'information
+                    (ste web.
+                  </li>
+                  <li>dépliant, plaquette, rapport d'activité)</li>
+                  <li>ifhvfvwefvrefewfew</li>
+                  <li>Identité visuelle, logo et charte graphique</li>
+                  <li>Présentation audiovisuelle, vidéo</li>
+                  <li>Diffusion online (e-citoyenneté)</li>
+                  <li>Campagne d'interêt genéral, concertation publique</li>
+                  <li>Assistance à maitrise d'ouvrage (AMO)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col-reverse lg:flex lg:flex-row pt-20 gap-10 lg:gap-20">
+            <div className="">
+              <h1 className="text-[#080C2E] text-[20px] lg:text-[46px] font-semibold dark:text-white leading-normal">
+                COMMUNICATION DIGITALE
+              </h1>
+              <div className="pl-5">
+                <ul className="ul-list text=[#080C2E] text-[12px] lg:text-[16px]  font-normal leading-[32px] dark:text-white">
+                  <li>Conseil en communication publique et territorial</li>
+                  <li>
+                    Conception éditoriale et rédactionnelle (magazine, wobzine,
+                    lettre d’information.
+                  </li>
+                  <li>
+                    Création graphique et realisation de support d'information
+                    (ste web.
+                  </li>
+                  <li>dépliant, plaquette, rapport d'activité)</li>
+                  <li>ifhvfvwefvrefewfew</li>
+                  <li>Identité visuelle, logo et charte graphique</li>
+                  <li>Présentation audiovisuelle, vidéo</li>
+                  <li>Diffusion online (e-citoyenneté)</li>
+                  <li>Campagne d'interêt genéral, concertation publique</li>
+                  <li>Assistance à maitrise d'ouvrage (AMO)</li>
+                </ul>
+              </div>
+            </div>
+            <div className="">
+              <Image src={digital} width={400} />
+            </div>
+          </div>
+          <div className="flex flex-col lg:flex lg:flex-row pt-20 gap-10 lg:gap-20">
+            <div className="">
+              <Image src={commercial} width={400} />
+            </div>
+            <div className="">
+              <h1 className="text-[#080C2E] text-[20px] lg:text-[46px] font-semibold dark:text-white leading-normal">
+                COMMUNICATION COMMERCIALE
+              </h1>
+              <div className="pl-5">
+                <ul className="ul-list text=[#080C2E] text-[12px] lg:text-[16px] font-normal leading-[32px] dark:text-white">
+                  <li>Conseil en communication publique et territorial</li>
+                  <li>
+                    Conception éditoriale et rédactionnelle (magazine, wobzine,
+                    lettre d’information.
+                  </li>
+                  <li>
+                    Création graphique et realisation de support d'information
+                    (ste web.
+                  </li>
+                  <li>dépliant, plaquette, rapport d'activité)</li>
+                  <li>ifhvfvwefvrefewfew</li>
+                  <li>Identité visuelle, logo et charte graphique</li>
+                  <li>Présentation audiovisuelle, vidéo</li>
+                  <li>Diffusion online (e-citoyenneté)</li>
+                  <li>Campagne d'interêt genéral, concertation publique</li>
+                  <li>Assistance à maitrise d'ouvrage (AMO)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div className="h-[100%] max-w-screen-xl mx-auto px-[16px] pt-20">
+          <div className="flex flex-col justify-center items-center pb-10">
+            <p className="text-[#080C2E] text-[23px] lg:text-[46px] font-semibold text-center dark:text-white">
+              Project Completed
+            </p>
+            <p className="w-full lg:w-[439px] text-[#5D5D7C] text-sm lg:text-[16px] font-medium lg:leading-8 text-center">
+              Nomade Agency transcende les frontières sectorielles, collaborant
+              avec des entreprises de divers horizons.
+            </p>
+          </div>
+          <Swiper />
+        </div>
+        <div className="w-full h-auto lg:h-[322px] bg-[#626296] flex items-center dark:bg-black overflow-hidden">
+          <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center max-w-screen-xl mx-auto pt-20  px-[16px] py-20 gap-10 lg:gap-[125px] overflow-hidden">
+            <div className="w-[250px] lg:w-[330px] h-[240px] mor relative flex flex-col justify-center items-center">
+              <h1 className="text-[50px] lg:text-[72px] font-bold leading-[96px] text-[#fff] hover:text-[#E5B250]">
+                100+
+              </h1>
+              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] hover:text-[#E5B250]">
+                Clients
+              </p>
+              <div className="w-[80px] h-[94px] bg-[#626296] dark:bg-black absolute rotate-45 -bottom-[45px] -right-[35px] bl"></div>
+            </div>
+            <div className="w-[250px] lg:w-[330px] h-[240px] mor relative flex flex-col justify-center items-center">
+              <h1 className="text-[50px] lg:text-[72px] font-bold leading-[96px] text-[#fff] hover:text-[#E5B250]">
+                +80%
+              </h1>
+              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] hover:text-[#E5B250]">
+                Completed
+              </p>
+              <div className="w-[80px] h-[95px] bg-[#626296] dark:bg-black absolute rotate-45 -bottom-[45px] -right-[35px] bl"></div>
+            </div>
+            <div className="w-[250px] lg:w-[330px] h-[240px] mor relative flex flex-col justify-center items-center sm:mb-20 md:mb-0 lg:mb-0">
+              <h1 className="text-[50px] lg:text-[72px] font-bold leading-[96px] text-[#fff] hover:text-[#E5B250]">
+                1.230+
+              </h1>
+              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] hover:text-[#E5B250]">
+                New Project
+              </p>
+              <div className="w-[80px] h-[95px] bg-[#626296] dark:bg-black absolute rotate-45 -bottom-[45px] -right-[35px] bl"></div>
+            </div>
+          </div>
+        </div>
+        <div className="h-[100%] pt-10 max-w-screen-xl mx-auto px-[16px]">
+          <div>
+            <ImageScroll />
+          </div>
+        </div>
+        <div className="h-[100%] pt-20 max-w-screen-xl mx-auto px-[16px] flex flex-col gap-10">
+          <div className="">
+            <p className="text-[#080C2E] text-[46px] font-bold dark:text-white">
+              Recent Projects
+            </p>
+            <p className="text-[#080C2E] text-[12px] lg:text-[16px] font-normal dark:text-white">
+              Nomade Agency transcende les frontières sectorielles, collaborant
+              avec des entreprises de divers horizons. Notre adaptabilité et
+              notre expertise s'étendent audelà des limites industrielles,
+              créant des synergies uniques. Que vous soyez dans la technologie,
+              la finance, ou d'autres secteurs, notre agilité nous permet de
+              naviguer avec succès à travers une variété de domaines. En
+              associant une approche polyvalente à une compréhension
+              approfondie, nous nous positionnons comme le partenaire idéal pour
+              accompagner votre entreprise vers de nouveaux horizons. Chez
+              Nomade Agency, la diversité des secteurs n'est pas un défi, c'est
+              une opportunité.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px]">
+              <div className="w-full rounded-[21px] overflow-hidden">
+                <Image
+                  src={png1}
+                  className=" object-cover object-center w-full h-full"
+                />
+              </div>
+              <div className="flex justify-center items-center">
+                <p className="text-center text-[#080C2E] text-[16px] font-bold dark:text-white">
+                  SPOT ONUDC
+                </p>
+              </div>
+            </div>
+            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px]">
+              <div className="w-full rounded-[21px] overflow-hidden">
+                <Image
+                  src={png2}
+                  className=" object-cover object-center w-full h-full"
+                />
+              </div>
+              <div className="flex justify-center items-center">
+                <p className="text-center text-[#080C2E] text-[16px] font-bold dark:text-white">
+                  SPOT AMC TRAVAUX
+                </p>
+              </div>
+            </div>
+            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px]">
+              <div className="w-full rounded-[21px] overflow-hidden">
+                <Image
+                  src={png3}
+                  className=" object-cover object-center w-full h-full"
+                />
+              </div>
+              <div className="flex justify-center items-center">
+                <p className="text-center text-[#080C2E] text-[16px] font-bold dark:text-white">
+                  SPOT EIFFAGE
+                </p>
+              </div>
+            </div>
+            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px]">
+              <div className="w-full rounded-[21px] overflow-hidden">
+                <Image
+                  src={png4}
+                  className=" object-cover object-center w-full h-full"
+                />
+              </div>
+              <div className="flex justify-center items-center">
+                <p className="text-center text-[#080C2E] text-[16px] font-bold dark:text-white">
+                  SPOT RIMGAZ
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="h-[100%] pt-20 max-w-screen-xl mx-auto px-[16px] flex flex-col gap-10">
+          <div>
+            <p className="text-[#080C2E] text-[23px] lg:text-[46px] font-normal text-center dark:text-white">
+              LA RECETTE EN MOINS DE SEPT
+            </p>
+          </div>
+          <div>
+            <Accordian />
+          </div>
+        </div>
+        <div className="max-w-screen-xl mx-auto px-[16px]">
+          <div className="flex justify-between bg-orange-500 h-[465px] w-[calc(100%_-_5%)] mx-auto relative -bottom-[200px] rounded-[16px] z-30 p-[50px]">
+            <div>
+              <p className="flex gap-1 text-[16px] text-[#080C2E] font-semibold bg-[#fff] py-2 px-4 rounded-[16px]">
+                <span className="pt-[2px]">
+                  <FiGlobe size={20} />
+                </span>
+                We have more than 1000+ clients worldwide
+              </p>
+              <p className="text-[#fff] text-[46px] font-semibold">
+                Start Growing Today
+              </p>
+              <p className="w-[437px] h-[67px] text-[#fff] text-[16px] font-medium leading-8">
+                We provide a variety of servers to grow your users acquisition
+                much user-friendly and boosting up sales.
+              </p>
+              <div>
+              <button className="rounded-[100px] py-4 px-10 bg-[#E5B250] hover:bg-[#F87B50] text-white dark:bg-white dark:text-black">
+                Contact Us
+              </button>
+            </div>
+            </div>
+            <div className="grid grid-cols-3 gap-6">
+              <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                <FiGlobe size={40} />
+              </div>
+              <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                <FiGlobe size={40} />
+              </div>
+              <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                <FiGlobe size={40} />
+              </div>
+              <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                <FiGlobe size={40} />
+              </div>
+              <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                <FiGlobe size={40} />
+              </div>
+              <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                <FiGlobe size={40} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <Footer />
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </Page>
+  );
 }
