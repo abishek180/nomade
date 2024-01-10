@@ -10,6 +10,7 @@ const footer = () => {
        <div className="w-[80px] h-[46px] lg:w-[112px] lg:h-[46px] flex  justify-center items-center">
           
           <Image src={logo} className="w-[100%]" alt="logo" />
+          <p>sugfudshvdfgvfvfdavdfv xcvxcvx</p>
         
       </div>
        </div>
