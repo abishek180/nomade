@@ -94,3 +94,22 @@ body {
 .bl{
   border-left:3px solid #ffffff73;
 }
+
+.slide-in{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #E5B250;
+  transform-origin: bottom;
+}
+.slide-out{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #E5B250;
+  transform-origin: top;
+}

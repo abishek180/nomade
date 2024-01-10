@@ -13,29 +13,45 @@ export default function Header() {
   const handleNav = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const menu = [
+    {
+      title: "Home",
+      href: "/",
+    },
+    {
+      title: "Features",
+      href: "#features",
+    },
+    {
+      title: "Services",
+      href: "#services",
+    },
+    {
+      title: "Projects",
+      href: "#projects",
+    },
+    {
+      title: "Contact Us",
+      href: "/contact",
+    },
+  ];
+
   return (
     <div className="w-full fixed top-0 z-[999] border-b-[1px] border-[#DCE1FD] bg-white/30 backdrop-blur-[20px] backdrop-filter py-[20px]">
       <nav className="flex max-w-screen-xl mx-auto justify-between items-center px-[16px]">
         <div className="w-[80px] h-[46px] lg:w-[112px] lg:h-[46px] flex  justify-center items-center">
-          <Image src={logo} className="w-[100%]" alt="logo"/>
+          <Link href="/">
+            <Image src={logo} className="w-[100%]" alt="logo" />
+          </Link>
         </div>
         <div className="hidden lg:block dark:text-white">
           <ul className="flex gap-10">
-            <li className="hover:text-[#F87B50]">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="hover:text-[#F87B50]">
-              <Link href="#features">Features</Link>
-            </li>
-            <li className="hover:text-[#F87B50]">
-              <Link href="#services">Services</Link>
-            </li>
-            <li className="hover:text-[#F87B50]">
-              <Link href="#projects">Projects</Link>
-            </li>
-            <li className="hover:text-[#F87B50]">
-              <Link href="/">Contact us</Link>
-            </li>
+            {menu.map((item, index) => (
+              <li className="hover:text-[#F87B50]" key={index}>
+                <a href={item.href}>{item.title}</a>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -55,7 +71,7 @@ export default function Header() {
         <div
           className={
             menuOpen
-              ? "fixed left-0 top-0 w-[55%] lg:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500 shadow-2xl	"
+              ? "fixed left-0 top-0 w-[55%] lg:hidden h-screen bg-[#fff] p-10 ease-in duration-500 shadow-2xl	"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -64,6 +80,15 @@ export default function Header() {
               <MdClose size={30} />
             </div>
           </div>
+          <div>
+              <ul className="flex gap-10 text-[22px] flex-col  md:flex md:flex-col md:gap-20 md:text-[24px]">
+                {menu.map((item, index) => (
+                  <li className="hover:text-[#F87B50]" key={index}>
+                    <a href={item.href}>{item.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
         </div>
       </nav>
     </div>

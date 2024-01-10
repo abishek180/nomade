@@ -1,9 +1,6 @@
 import SmoothScroller from "./Smoothscroll";
 import Header from "./header";
 
-
-
-
 export default function Page({children}){
     return(
         <>

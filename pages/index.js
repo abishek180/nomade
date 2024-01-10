@@ -92,7 +92,7 @@ export default function Home() {
                 COMMUNICATION PUBLIQUE
               </h1>
               <div className="pl-5">
-                <ul className="ul-list text=[#080C2E] text-[12px] lg:text-[16px] font-normal leading-[32px] dark:text-white">
+                <ul className="ul-list text=[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] dark:text-white">
                   <li>Conseil en communication publique et territorial</li>
                   <li>
                     Conception éditoriale et rédactionnelle (magazine, wobzine,
@@ -119,7 +119,7 @@ export default function Home() {
                 COMMUNICATION DIGITALE
               </h1>
               <div className="pl-5">
-                <ul className="ul-list text=[#080C2E] text-[12px] lg:text-[16px]  font-normal leading-[32px] dark:text-white">
+                <ul className="ul-list text=[#080C2E] text-[14px] lg:text-[16px]  font-normal leading-[32px] dark:text-white">
                   <li>Conseil en communication publique et territorial</li>
                   <li>
                     Conception éditoriale et rédactionnelle (magazine, wobzine,
@@ -152,7 +152,7 @@ export default function Home() {
                 COMMUNICATION COMMERCIALE
               </h1>
               <div className="pl-5">
-                <ul className="ul-list text=[#080C2E] text-[12px] lg:text-[16px] font-normal leading-[32px] dark:text-white">
+                <ul className="ul-list text=[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] dark:text-white">
                   <li>Conseil en communication publique et territorial</li>
                   <li>
                     Conception éditoriale et rédactionnelle (magazine, wobzine,
@@ -227,10 +227,10 @@ export default function Home() {
         </div>
         <div className="h-[100%] pt-20 max-w-screen-xl mx-auto px-[16px] flex flex-col gap-10">
           <div className="">
-            <p className="text-[#080C2E] text-[46px] font-bold dark:text-white">
+            <p className="text-[#080C2E] text-[23px] lg:text-[46px] font-bold dark:text-white">
               Recent Projects
             </p>
-            <p className="text-[#080C2E] text-[12px] lg:text-[16px] font-normal dark:text-white">
+            <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal dark:text-white">
               Nomade Agency transcende les frontières sectorielles, collaborant
               avec des entreprises de divers horizons. Notre adaptabilité et
               notre expertise s étendent audelà des limites industrielles,
@@ -245,7 +245,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px]">
+            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
               <div className="w-full rounded-[21px] overflow-hidden">
                 <Image
                   src={png1}
@@ -259,7 +259,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px]">
+            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
               <div className="w-full rounded-[21px] overflow-hidden">
                 <Image
                   src={png2}
@@ -273,7 +273,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px]">
+            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
               <div className="w-full rounded-[21px] overflow-hidden">
                 <Image
                   src={png3}
@@ -287,7 +287,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px]">
+            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
               <div className="w-full rounded-[21px] overflow-hidden">
                 <Image
                   src={png4}
@@ -314,45 +314,47 @@ export default function Home() {
           </div>
         </div>
         <div className="max-w-screen-xl mx-auto px-[16px]">
-          <div className="flex justify-between bg-orange-500 h-[465px] w-[calc(100%_-_5%)] mx-auto relative -bottom-[200px] rounded-[16px] z-30 p-[50px]">
-            <div>
+          <div className="flex gap-5 justify-between bg-[#F87B50] h-auto lg:h-[465px] w-[calc(100%_-_5%)] mx-auto relative -bottom-[200px] rounded-[16px] z-30 p-[50px]">
+            <div className="flex flex-col gap-8">
               <p className="flex gap-1 text-[16px] text-[#080C2E] font-semibold bg-[#fff] py-2 px-4 rounded-[16px]">
                 <span className="pt-[2px]">
                   <FiGlobe size={20} />
                 </span>
-                We have more than 1000+ clients worldwide
+                More than 1000+ clients worldwide
               </p>
-              <p className="text-[#fff] text-[46px] font-semibold">
+             <div>
+             <p className="text-[#fff] text-[36px] lg:text-[46px] font-semibold">
                 Start Growing Today
               </p>
-              {/* <p className="w-[437px] h-[67px] text-[#fff] text-[16px] font-medium leading-8">
+              <p className="w-auto h-auto lg:w-[437px] lg:h-[67px] text-[#fff] text-[12px] lg:text-[16px] font-medium leading-8">
                 We provide a variety of servers to grow your users acquisition
                 much user-friendly and boosting up sales.
-              </p> */}
-              <div>
-                <button className="rounded-[100px] py-4 px-10 bg-[#E5B250] hover:bg-[#F87B50] text-white dark:bg-white dark:text-black">
+              </p>
+             </div>
+              <div className="pt-3">
+                <button className="rounded-[100px] py-4 px-10 bg-[#E5B250] hover:bg-[#F87B50] font-bold text-[#080C2E] dark:bg-white dark:text-black">
                   Contact Us
                 </button>
               </div>
             </div>
             <div className="hidden lg:block">
               <div className="grid grid-cols-3 gap-6">
-                <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                <div className="py-14 px-14 bg-[#fff] rounded-[26px]">
                   <FiGlobe size={40} />
                 </div>
-                <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                <div className="py-14 px-14 bg-[#fff] rounded-[26px]">
                   <FiGlobe size={40} />
                 </div>
-                <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                <div className="py-14 px-14 bg-[#fff] rounded-[26px]">
                   <FiGlobe size={40} />
                 </div>
-                <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                <div className="py-14 px-14 bg-[#fff] rounded-[26px]">
                   <FiGlobe size={40} />
                 </div>
-                <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                <div className="py-14 px-14 bg-[#fff] rounded-[26px]">
                   <FiGlobe size={40} />
                 </div>
-                <div className="py-10 px-14 bg-[#fff] rounded-[26px]">
+                <div className="py-14 px-14 bg-[#fff] rounded-[26px]">
                   <FiGlobe size={40} />
                 </div>
               </div>
