@@ -2,7 +2,7 @@ import { useState } from "react";
 import React from "react";
 import { useEffect } from "react";
 
-const theme = () => {
+const Theme = () => {
     const [isDarkTheme, setIsDarkTheme] = useState(false);
    
     useEffect(() => {
@@ -71,4 +71,4 @@ const theme = () => {
   );
 };
 
-export default theme;
+export default Theme;

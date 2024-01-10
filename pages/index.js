@@ -43,7 +43,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center items-center relative pt-10 md:pt-0 lg:pt-0">
-            <Image src={png} />
+            <Image src={png} alt="image"/>
             <div className="w-[120px] h-[130px] lg:w-[160px] lg:h-[180px] p-[20px] rounded-[26px] absolute bg-[#fff] -right-7 bottom-7 lg:right-12 lg:bottom-10 flex flex-col justify-center items-center gap-5 dark:text-white">
               <VscProject size={40} color="#E5B250" />
               <p className="text-[20px] lg:text-[30px] font-bold text-center text-[#080C2E] leading-none">
@@ -79,7 +79,7 @@ export default function Home() {
         <section className="h-[100%] max-w-screen-xl mx-auto px-[16px] flex flex-col justify-center items-center" id="services">
           <div className="flex flex-col lg:flex lg:flex-row pt-20 gap-0 lg:gap-20">
             <div className="">
-              <Image src={communication} width={500} />
+              <Image src={communication} width={500} alt="image"/>
             </div>
             <div className="">
               <h1 className="text-[#080C2E] text-[20px] lg:text-[46px] font-semibold dark:text-white leading-normal">
@@ -90,19 +90,19 @@ export default function Home() {
                   <li>Conseil en communication publique et territorial</li>
                   <li>
                     Conception éditoriale et rédactionnelle (magazine, wobzine,
-                    lettre d’information.
+                    lettre d information.
                   </li>
                   <li>
-                    Création graphique et realisation de support d'information
+                    Création graphique et realisation de support d information
                     (ste web.
                   </li>
-                  <li>dépliant, plaquette, rapport d'activité)</li>
+                  <li>dépliant, plaquette, rapport d activité)</li>
                   <li>ifhvfvwefvrefewfew</li>
                   <li>Identité visuelle, logo et charte graphique</li>
                   <li>Présentation audiovisuelle, vidéo</li>
                   <li>Diffusion online (e-citoyenneté)</li>
-                  <li>Campagne d'interêt genéral, concertation publique</li>
-                  <li>Assistance à maitrise d'ouvrage (AMO)</li>
+                  <li>Campagne d interêt genéral, concertation publique</li>
+                  <li>Assistance à maitrise d ouvrage (AMO)</li>
                 </ul>
               </div>
             </div>
@@ -120,26 +120,26 @@ export default function Home() {
                     lettre d’information.
                   </li>
                   <li>
-                    Création graphique et realisation de support d'information
+                    Création graphique et realisation de support d information
                     (ste web.
                   </li>
-                  <li>dépliant, plaquette, rapport d'activité)</li>
+                  <li>dépliant, plaquette, rapport d activité)</li>
                   <li>ifhvfvwefvrefewfew</li>
                   <li>Identité visuelle, logo et charte graphique</li>
                   <li>Présentation audiovisuelle, vidéo</li>
                   <li>Diffusion online (e-citoyenneté)</li>
-                  <li>Campagne d'interêt genéral, concertation publique</li>
-                  <li>Assistance à maitrise d'ouvrage (AMO)</li>
+                  <li>Campagne d interêt genéral, concertation publique</li>
+                  <li>Assistance à maitrise d ouvrage (AMO)</li>
                 </ul>
               </div>
             </div>
             <div className="">
-              <Image src={digital} width={400} />
+              <Image src={digital} width={400} alt="image"/>
             </div>
           </div>
           <div className="flex flex-col lg:flex lg:flex-row pt-20 gap-10 lg:gap-20">
             <div className="">
-              <Image src={commercial} width={400} />
+              <Image src={commercial} width={400} alt="image"/>
             </div>
             <div className="">
               <h1 className="text-[#080C2E] text-[20px] lg:text-[46px] font-semibold dark:text-white leading-normal">
@@ -153,16 +153,16 @@ export default function Home() {
                     lettre d’information.
                   </li>
                   <li>
-                    Création graphique et realisation de support d'information
+                    Création graphique et realisation de support d information
                     (ste web.
                   </li>
-                  <li>dépliant, plaquette, rapport d'activité)</li>
+                  <li>dépliant, plaquette, rapport d activité)</li>
                   <li>ifhvfvwefvrefewfew</li>
                   <li>Identité visuelle, logo et charte graphique</li>
                   <li>Présentation audiovisuelle, vidéo</li>
                   <li>Diffusion online (e-citoyenneté)</li>
-                  <li>Campagne d'interêt genéral, concertation publique</li>
-                  <li>Assistance à maitrise d'ouvrage (AMO)</li>
+                  <li>Campagne d interêt genéral, concertation publique</li>
+                  <li>Assistance à maitrise d ouvrage (AMO)</li>
                 </ul>
               </div>
             </div>
@@ -224,14 +224,14 @@ export default function Home() {
             <p className="text-[#080C2E] text-[12px] lg:text-[16px] font-normal dark:text-white">
               Nomade Agency transcende les frontières sectorielles, collaborant
               avec des entreprises de divers horizons. Notre adaptabilité et
-              notre expertise s'étendent audelà des limites industrielles,
+              notre expertise s étendent audelà des limites industrielles,
               créant des synergies uniques. Que vous soyez dans la technologie,
-              la finance, ou d'autres secteurs, notre agilité nous permet de
+              la finance, ou d autres secteurs, notre agilité nous permet de
               naviguer avec succès à travers une variété de domaines. En
               associant une approche polyvalente à une compréhension
               approfondie, nous nous positionnons comme le partenaire idéal pour
               accompagner votre entreprise vers de nouveaux horizons. Chez
-              Nomade Agency, la diversité des secteurs n'est pas un défi, c'est
+              Nomade Agency, la diversité des secteurs n est pas un défi, c est
               une opportunité.
             </p>
           </div>
@@ -241,7 +241,7 @@ export default function Home() {
                 <Image
                   src={png1}
                   className=" object-cover object-center w-full h-full"
-                />
+                alt="image"/>
               </div>
               <div className="flex justify-center items-center">
                 <p className="text-center text-[#080C2E] text-[16px] font-bold dark:text-white">
@@ -254,7 +254,7 @@ export default function Home() {
                 <Image
                   src={png2}
                   className=" object-cover object-center w-full h-full"
-                />
+                alt="image"/>
               </div>
               <div className="flex justify-center items-center">
                 <p className="text-center text-[#080C2E] text-[16px] font-bold dark:text-white">
@@ -267,7 +267,7 @@ export default function Home() {
                 <Image
                   src={png3}
                   className=" object-cover object-center w-full h-full"
-                />
+                alt="image"/>
               </div>
               <div className="flex justify-center items-center">
                 <p className="text-center text-[#080C2E] text-[16px] font-bold dark:text-white">
@@ -280,7 +280,7 @@ export default function Home() {
                 <Image
                   src={png4}
                   className=" object-cover object-center w-full h-full"
-                />
+                alt="image"/>
               </div>
               <div className="flex justify-center items-center">
                 <p className="text-center text-[#080C2E] text-[16px] font-bold dark:text-white">

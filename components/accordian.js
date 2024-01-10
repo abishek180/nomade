@@ -20,7 +20,7 @@ function Icon({ id, open }) {
   );
 }
  
-const accordian = () => {
+const Accordian = () => {
     const [open, setOpen] = React.useState(0);
  
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
@@ -77,4 +77,4 @@ const accordian = () => {
     )
 }
 
-export default accordian
+export default Accordian

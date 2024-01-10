@@ -46,56 +46,56 @@ export default function Slide() {
         <SwiperSlide>
           <div className='w-full h-[190px] rounded-[16px] overflow-hidden border-2 border-[#fff] hover:border-2 hover:border-[#F87B50]'>
 
-            <Image src={png1} className='object-cover object-center w-full h-full'/>
+            <Image src={png1} className='object-cover object-center w-full h-full' alt='image'/>
           </div>
          
         </SwiperSlide>
         <SwiperSlide>
           <div className='w-full h-[190px] rounded-[16px] overflow-hidden border-2 border-[#fff] hover:border-2 hover:border-[#F87B50]'>
 
-            <Image src={png2} className=' object-cover object-center w-full h-full'/>
+            <Image src={png2} className=' object-cover object-center w-full h-full' alt='image'/>
           </div>
          
         </SwiperSlide>
         <SwiperSlide>
           <div className='w-full h-[190px] rounded-[16px] overflow-hidden border-2 border-[#fff] hover:border-2 hover:border-[#F87B50]'>
 
-            <Image src={png3} className=' object-cover object-center w-full h-full'/>
+            <Image src={png3} className=' object-cover object-center w-full h-full' alt='image'/>
           </div>
          
         </SwiperSlide>
         <SwiperSlide>
           <div className='w-full h-[190px] rounded-[16px] overflow-hidden border-2 border-[#fff] hover:border-2 hover:border-[#F87B50]'>
 
-            <Image src={png4} className=' object-cover object-center w-full h-full'/>
+            <Image src={png4} className=' object-cover object-center w-full h-full' alt='image'/>
           </div>
          
         </SwiperSlide>
         <SwiperSlide>
           <div className='w-full h-[190px] rounded-[16px] overflow-hidden border-2 hover:border-2 hover:border-[#F87B50]'>
 
-            <Image src={png1} className=' object-cover object-center w-full h-full'/>
+            <Image src={png1} className=' object-cover object-center w-full h-full' alt='image'/>
           </div>
          
         </SwiperSlide>
         <SwiperSlide>
           <div className='w-full h-[190px] rounded-[16px] overflow-hidden border-2 border-[#fff] hover:border-2 hover:border-[#F87B50]'>
 
-            <Image src={png2} className=' object-cover object-center w-full h-full'/>
+            <Image src={png2} className=' object-cover object-center w-full h-full' alt='image'/>
           </div>
          
         </SwiperSlide>
         <SwiperSlide>
           <div className='w-full h-[190px] rounded-[16px] overflow-hidden border-2 border-[#fff] hover:border-2 hover:border-[#F87B50]'>
 
-            <Image src={png3} className=' object-cover object-center w-full h-full'/>
+            <Image src={png3} className=' object-cover object-center w-full h-full' alt='image'/>
           </div>
          
         </SwiperSlide>
             <SwiperSlide>
           <div className='w-full h-[190px] rounded-[16px] overflow-hidden border-2 border-[#fff] hover:border-2 hover:border-[#F87B50]'>
 
-            <Image src={png4} className=' object-cover object-center w-full h-full'/>
+            <Image src={png4} className=' object-cover object-center w-full h-full' alt='image'/>
           </div>
          
         </SwiperSlide>
