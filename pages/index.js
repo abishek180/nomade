@@ -15,22 +15,26 @@ import digital from "/public/Images/digital.svg";
 import commercial from "/public/Images/commercial.svg";
 import ImageScroll from "@/components/imagescroll";
 import Accordian from "@/components/accordian";
-import Footer from "@/components/footer";
+// import TypeWriterEffect from 'react-typewriter-effect';
+import React from "react";
+import { useRef } from "react";
+import Typewrite from "@/components/Typewrite";
 
 export default function Home() {
+  const myAppRef = useRef(null);
   return (
     <Page>
       <div className="">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-screen-xl mx-auto px-[16px]">
           <div className="flex flex-col justify-center gap-5">
             <p className="flex gap-1 text-[#080C2E] font-semibold text-[10px] lg:text-[16px] dark:text-white">
-              <span className="pt-[2px]">
+              <span className="pt-[2px] lg:pt-[6px]">
                 <FiGlobe size={10} />{" "}
               </span>
               We host more than 120,000 websites
             </p>
-            <h1 className="text-[40px] lg:text-[70px] text-[#080C2E] font-semibold leading-[100%] pt-10 dark:text-white">
-              Tools that can be used as lectures,
+            <h1 className="text-[40px] lg:text-[70px] text-[#080C2E] font-semibold leading-[100%] pt-5 dark:text-white">
+              <Typewrite />
             </h1>
             <p className="text-[#5D5D7C] text-[10px] lg:text-[16px] font-medium leading-[20px] pt-3 lg:pt-2">
               Presentations are tools that can be used as lectures, speeches,
@@ -322,15 +326,15 @@ export default function Home() {
                 </span>
                 More than 1000+ clients worldwide
               </p>
-             <div>
-             <p className="text-[#fff] text-[36px] lg:text-[46px] font-semibold">
-                Start Growing Today
-              </p>
-              <p className="w-auto h-auto lg:w-[437px] lg:h-[67px] text-[#fff] text-[12px] lg:text-[16px] font-medium leading-8">
-                We provide a variety of servers to grow your users acquisition
-                much user-friendly and boosting up sales.
-              </p>
-             </div>
+              <div>
+                <p className="text-[#fff] text-[36px] lg:text-[46px] font-semibold">
+                  Start Growing Today
+                </p>
+                <p className="w-auto h-auto lg:w-[437px] lg:h-[67px] text-[#fff] text-[12px] lg:text-[16px] font-medium leading-8">
+                  We provide a variety of servers to grow your users acquisition
+                  much user-friendly and boosting up sales.
+                </p>
+              </div>
               <div className="pt-3">
                 <button className="rounded-[100px] py-4 px-10 bg-[#E5B250] hover:bg-[#F87B50] font-bold text-[#080C2E] dark:bg-white dark:text-black">
                   Contact Us
@@ -361,7 +365,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </Page>
   );

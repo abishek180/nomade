@@ -21,6 +21,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
+    "react-simple-typewriter": "^5.0.1",
+    "react-typewriter-effect": "^1.1.0",
     "sharp": "^0.33.1",
     "swiper": "^11.0.5",
     "tailwind-merge": "^2.2.0",
