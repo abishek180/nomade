@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
 import logo from "/public/Images/Rectangle.png";
 import { TbMenuDeep } from "react-icons/tb";
@@ -43,9 +43,9 @@ export default function Header() {
     <div className="w-full fixed top-0 z-[999] border-b-[1px] border-[#DCE1FD] bg-white/30 backdrop-blur-[20px] backdrop-filter py-[20px]">
       <nav className="flex max-w-screen-xl mx-auto justify-between items-center px-[16px]">
         <div className="w-[80px] h-[46px] lg:w-[112px] lg:h-[46px] flex  justify-center items-center">
-          <Link href="#home">
+          <a href="#home">
             <Image src={logo} className="w-[100%]" alt="logo" />
-          </Link>
+          </a>
         </div>
         <div className="hidden lg:block dark:text-white">
           <ul className="flex gap-10">
