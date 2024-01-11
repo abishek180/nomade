@@ -47,8 +47,8 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center items-center relative pt-10 md:pt-0 lg:pt-0">
-            <Image src={png} alt="image" />
-            <div className="w-[120px] h-[130px] lg:w-[160px] lg:h-[180px] p-[20px] rounded-[26px] absolute bg-[#fff] -right-7 bottom-7 lg:right-12 lg:bottom-10 flex flex-col justify-center items-center gap-5 dark:text-white">
+            <Image src={png} alt="image" className="w-full h-full object-cover object-center"/>
+            <div className="w-[120px] h-[130px] lg:w-[160px] lg:h-[180px] p-[20px] rounded-[26px] absolute bg-[#fff] -right-3 bottom-7 lg:right-12 lg:bottom-10 flex flex-col justify-center items-center gap-5 dark:text-white">
               <VscProject size={40} color="#E5B250" />
               <p className="text-[20px] lg:text-[30px] font-bold text-center text-[#080C2E] leading-none">
                 1230+{" "}
@@ -57,7 +57,7 @@ export default function Home() {
                 </span>
               </p>
             </div>
-            <div className="w-[220px] h-[80px] lg:w-[270px] lg:h-[96px] p-[20px] rounded-[26px] absolute bg-[#fff] -left-5 -top-1 lg:left-12 lg:-top-8 flex justify-center items-center gap-5">
+            <div className="w-[220px] h-[80px] lg:w-[270px] lg:h-[96px] p-[20px] rounded-[26px] absolute bg-[#fff] -left-3 -top-1 lg:left-12 lg:-top-8 flex justify-center items-center gap-5">
               <FaRunning size={40} color="#E5B250" />
               <p className="text-[16px] lg:text-[20px] font-bold text-center text-[#080C2E]">
                 Super Reliable
@@ -67,7 +67,7 @@ export default function Home() {
                 </span>
               </p>
             </div>
-            <div className="rounded-[100px] bg-[#E5B250] absolute p-[8px] lg:p-[20px] -right-6 top-10 lg:right-16 lg:top-10">
+            <div className="rounded-[100px] bg-[#E5B250] absolute p-[8px] lg:p-[20px] -right-4 top-10 lg:right-16 lg:top-10">
               <FiGlobe size={40} color="#fff" />
             </div>
           </div>
