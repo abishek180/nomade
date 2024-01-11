@@ -7,7 +7,9 @@ import { TbMenuDeep } from "react-icons/tb";
 import Theme from "@/components/theme";
 import { MdClose } from "react-icons/md";
 
+
 export default function Header() {
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleNav = () => {
@@ -41,7 +43,7 @@ export default function Header() {
     <div className="w-full fixed top-0 z-[999] border-b-[1px] border-[#DCE1FD] bg-white/30 backdrop-blur-[20px] backdrop-filter py-[20px]">
       <nav className="flex max-w-screen-xl mx-auto justify-between items-center px-[16px]">
         <div className="w-[80px] h-[46px] lg:w-[112px] lg:h-[46px] flex  justify-center items-center">
-          <Link href="/">
+          <Link href="#home">
             <Image src={logo} className="w-[100%]" alt="logo" />
           </Link>
         </div>
@@ -71,17 +73,17 @@ export default function Header() {
         <div
           className={
             menuOpen
-              ? "fixed left-0 top-0 w-[55%] lg:hidden h-screen bg-[#fff] p-10 ease-in duration-500 shadow-2xl	"
+              ? "fixed left-0 top-0 w-[55%] lg:hidden h-screen bg-[#fff] p-10 ease-in duration-500 shadow-2xl dark:bg-black"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div className="flex w-full justify-end items-center">
-            <div onClick={handleNav} className=" cursor-pointer">
+            <div onClick={handleNav} className=" cursor-pointer dark:text-white">
               <MdClose size={30} />
             </div>
           </div>
           <div>
-              <ul className="flex gap-10 text-[22px] flex-col  md:flex md:flex-col md:gap-20 md:text-[24px]">
+              <ul className="flex gap-10 text-[22px] flex-col  md:flex md:flex-col md:gap-20 md:text-[24px] dark:text-white">
                 {menu.map((item, index) => (
                   <li className="hover:text-[#F87B50]" key={index}>
                     <a href={item.href}>{item.title}</a>

@@ -16,16 +16,34 @@ import commercial from "/public/Images/commercial.svg";
 import ImageScroll from "@/components/imagescroll";
 import Accordian from "@/components/accordian";
 import Footer from "@/components/footer";
-import React from "react";
+import React, { useEffect } from "react";
 import { useRef } from "react";
 import Typewrite from "@/components/Typewrite";
+import Link from "next/link";
+import { TiMessages } from "react-icons/ti";
+import $ from 'jquery';
+
 
 export default function Home() {
   const myAppRef = useRef(null);
+  useEffect(() => {
+    $(document).ready(function(){
+      $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+  
+        var target = this.hash;
+        var $target = $(target);
+  
+        $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+        }, 900, 'swing');
+      });
+    });
+  }, []);
   return (
     <Page>
       <div className="">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-screen-xl mx-auto px-[16px]">
+        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-20 max-w-screen-xl mx-auto px-[16px]" id="home">
           <div className="flex flex-col justify-center gap-5">
             <p className="flex gap-1 text-[#080C2E] font-semibold text-[10px] lg:text-[16px] dark:text-white">
               <span className="pt-[2px] lg:pt-[6px]">
@@ -40,15 +58,18 @@ export default function Home() {
               Presentations are tools that can be used as lectures, speeches,
               reports, and more it is mostly presented.
             </p>
-            <div>
-              <button className="rounded-[100px] py-4 px-10 bg-[#E5B250] hover:bg-[#F87B50] text-white dark:bg-white dark:text-black">
+            <div className="flex items-center gap-20 pt-10">
+              <button className="rounded-[100px] py-4 px-10 text-[12px] lg:text-[16px] bg-[#E5B250] hover:bg-[#F87B50] text-white dark:bg-white dark:text-black">
                 Explore more
               </button>
+              <div>
+                <Link href="/contact" className="text-[#E5B250] text-[12px] lg:text-[16px] font-semibold flex"><TiMessages/>Contact Us</Link>
+              </div>
             </div>
           </div>
-          <div className="flex justify-center items-center relative pt-10 md:pt-0 lg:pt-0">
+          <div className="flex justify-center items-center relative pt-10 md:pt-0 lg:pt-0 w-auto lg:w-[500px]">
             <Image src={png} alt="image" className="w-full h-full object-cover object-center"/>
-            <div className="w-[120px] h-[130px] lg:w-[160px] lg:h-[180px] p-[20px] rounded-[26px] absolute bg-[#fff] -right-3 bottom-7 lg:right-12 lg:bottom-10 flex flex-col justify-center items-center gap-5 dark:text-white">
+            <div className="w-[120px] h-[130px] lg:w-[160px] lg:h-[180px] p-[20px] rounded-[26px] absolute bg-[#fff] -right-3 bottom-7 lg:-right-10 lg:bottom-10 flex flex-col justify-center items-center gap-5 dark:text-white">
               <VscProject size={40} color="#E5B250" />
               <p className="text-[20px] lg:text-[30px] font-bold text-center text-[#080C2E] leading-none">
                 1230+{" "}
@@ -57,7 +78,7 @@ export default function Home() {
                 </span>
               </p>
             </div>
-            <div className="w-[220px] h-[80px] lg:w-[270px] lg:h-[96px] p-[20px] rounded-[26px] absolute bg-[#fff] -left-3 -top-1 lg:left-12 lg:-top-8 flex justify-center items-center gap-5">
+            <div className="w-[220px] h-[80px] lg:w-[270px] lg:h-[96px] p-[20px] rounded-[26px] absolute bg-[#fff] -left-3 -top-1 lg:-left-10 lg:-top-8 flex justify-center items-center gap-5">
               <FaRunning size={40} color="#E5B250" />
               <p className="text-[16px] lg:text-[20px] font-bold text-center text-[#080C2E]">
                 Super Reliable
@@ -67,11 +88,11 @@ export default function Home() {
                 </span>
               </p>
             </div>
-            <div className="rounded-[100px] bg-[#E5B250] absolute p-[8px] lg:p-[20px] -right-4 top-10 lg:right-16 lg:top-10">
+            <div className="rounded-[100px] bg-[#E5B250] absolute p-[8px] lg:p-[20px] -right-4 top-10 lg:-right-10 lg:top-10">
               <FiGlobe size={40} color="#fff" />
             </div>
           </div>
-        </div>
+        </section>
         <section
           className="h-[100%] max-w-screen-xl mx-auto px-[16px]"
           id="features"
@@ -179,7 +200,7 @@ export default function Home() {
           </div>
         </section>
         <section
-          className="h-[100%] max-w-screen-xl mx-auto px-[16px] pt-20"
+          className="h-[100%] max-w-screen-xl mx-auto px-[16px] pt-20 "
           id="projects"
         >
           <div className="flex flex-col justify-center items-center pb-10">
@@ -320,14 +341,14 @@ export default function Home() {
         <div className="max-w-screen-xl mx-auto px-[16px]">
           <div className="flex gap-5 justify-between bg-[#F87B50] h-auto lg:h-[465px] w-[calc(100%_-_5%)] mx-auto relative -bottom-[200px] rounded-[16px] z-30 p-[50px]">
             <div className="flex flex-col gap-8">
-              <p className="flex gap-1 text-[16px] text-[#080C2E] font-semibold bg-[#fff] py-2 px-4 rounded-[16px]">
+              <p className="flex gap-1 text-[14px] lg:text-[16px] text-[#080C2E] font-semibold bg-[#fff] py-2 px-4 rounded-[16px]">
                 <span className="pt-[2px]">
                   <FiGlobe size={20} />
                 </span>
                 More than 1000+ clients worldwide
               </p>
               <div>
-                <p className="text-[#fff] text-[36px] lg:text-[46px] font-semibold">
+                <p className="text-[#fff] text-[30px] lg:text-[46px] font-semibold">
                   Start Growing Today
                 </p>
                 <p className="w-auto h-auto lg:w-[437px] lg:h-[67px] text-[#fff] text-[12px] lg:text-[16px] font-medium leading-8">
@@ -337,7 +358,7 @@ export default function Home() {
               </div>
               <div className="pt-3">
                 <button className="rounded-[100px] py-4 px-10 bg-[#E5B250] hover:bg-[#F87B50] font-bold text-[#080C2E] dark:bg-white dark:text-black">
-                  Contact Us
+                 <Link href="/contact">Contact Us</Link> 
                 </button>
               </div>
             </div>

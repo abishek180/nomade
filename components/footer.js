@@ -38,7 +38,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-60 pr-0 lg:pr-40">
-              <div className="flex flex-col gap-[30px]">
+              <div className="flex flex-col gap-5 lg:gap-[30px]">
                 <p className="text-[#fff] text-[18px] font-bold leading-normal">
                   Home
                 </p>
@@ -55,7 +55,7 @@ const Footer = () => {
                   Contact
                 </p>
               </div>
-              <div className="flex flex-col gap-[30px]">
+              <div className="flex flex-col gap-5 lg:gap-[30px]">
                 <p className="text-[#fff] text-[18px] font-bold leading-normal">
                   Company
                 </p>
@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex justify-center items-center pt-[50px] pb-[20px]">
-            <p className="text-[#61647D] text-[16px] font-medium">All Rights Reserved • Copyright Weserve by Nomade Agency  2024 in India</p>
+            <p className="text-[#61647D] text-[12px] lg:text-[16px] font-medium">All Rights Reserved • Copyright Weserve by Nomade Agency  2024 in India</p>
           </div>
         </div>
       </div>
