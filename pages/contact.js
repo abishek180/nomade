@@ -1,7 +1,6 @@
 import Page from "@/components/page";
 import Footer from "@/components/footer";
 import React, { useState } from "react";
-import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
@@ -51,7 +50,6 @@ function Contact() {
             if (result.status === 200) {
               setMessage(
                 <div className="flex flex-col justify-center items-center gap-2">
-                  <FaCircleCheck className="text-[green] text-[50px]" />
                   <span className="text-[green] text-center">
                     Thanks for getting in touch. Our team will contact you
                     within 48 hours.
