@@ -1,34 +1,247 @@
 import Page from "@/components/page";
-import React from "react";
-import { useRouter } from "next/router";
+import Footer from "@/components/footer";
+import React, { useState } from "react";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import emailjs from "@emailjs/browser";
+import { useFormik } from "formik";
+import * as yup from "yup";
+import ImageScroll from "@/components/imagescroll";
 
+function Contact() {
+  const [message, setMessage] = useState("");
 
-function MyComponent() {
-  const router = useRouter();
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      radio: "",
+      email: "",
+      message:"",
+     
+    },
+
+    enableReinitialize: true,
+
+    validateOnChange: false,
+
+    validationSchema: yup.object().shape({
+      name: yup.string().required("Required"),
+      radio: yup.string().required("Required"),
+      email: yup.string().required("Must be a valid email address"),
+    }),
+
+    onSubmit: async (e) => {
+      console.log(e);
+
+      emailjs
+        .send(
+          "service_bqhvp46",
+          "template_e7wa7ls",
+          {
+            to_name: e.name,
+            email: e.email,
+            number: e.number,
+          },
+          "kFZTDWpSoa3dQ7HQ9"
+        )
+        .then(
+          (result) => {
+            if (result.status === 200) {
+              setMessage(
+                <div className="flex flex-col justify-center items-center gap-2">
+                  <FaCircleCheck className="text-[green] text-[50px]" />
+                  <span className="text-[green] text-center">
+                    Thanks for getting in touch. Our team will contact you
+                    within 48 hours.
+                  </span>
+                </div>
+              );
+            }
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    },
+  });
 
   return (
     <Page>
       <div className="max-w-screen-xl mx-auto px-[16px]">
-        <div>
-          <h2>Current Pathname: {router.pathname}</h2>
-          {/* Other component logic based on pathname */}
+        <div className="flex flex-col lg:flex lg:flex-row gap-20 bg-[#fff] dark:bg-black">
+          <div className="flex flex-col justify-between items-center">
+            <form
+              class="flex flex-col"
+              action={"submit"}
+              onSubmit={formik.handleSubmit}
+            >
+              <div class="mb-6 flex gap-2">
+                <div class="w-full md:w-1/2 mb-6 md:mb-0">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-[#fff]"
+                    for="grid-first-name"
+                  >
+                    {" "}
+                    First Name
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name"
+                    type="text"
+                    YOUR
+                    NAME
+                    placeholder=""
+                    value={formik.values.name}
+                    onChange={(e) => {
+                      console.log(e.target.value);
+                      formik.setFieldValue("name", e.target.value);
+                    }}
+                  />
+                  {formik.errors.name && (
+                    <p className="text-[red] text-[14px] mb-[6px]">
+                      {formik.errors.name}
+                    </p>
+                  )}
+                </div>
+                <div class="w-full md:w-1/2 mb-6 md:mb-0">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-[#fff]"
+                    for="grid-last-name"
+                  >
+                    {" "}
+                    Last Name
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-last-name"
+                    type="text"
+                    YOUR
+                    NAME
+                    placeholder=""
+                    value={formik.values.name}
+                    onChange={(e) => {
+                      console.log(e.target.value);
+                      formik.setFieldValue("name", e.target.value);
+                    }}
+                  />
+                  {formik.errors.name && (
+                    <p className="text-[red] text-[14px] mb-[6px]">
+                      {formik.errors.name}
+                    </p>
+                  )}
+                </div>
+              </div>
+              <div class=" mb-6">
+                <div class="w-full ">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-[#fff]"
+                    for="grid-email"
+                  >
+                    Email
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-email"
+                    type="email"
+                    placeholder="Enter your email"
+                    value={formik.values.email}
+                    onChange={(e) => {
+                      console.log(e.target.value);
+                      formik.setFieldValue("email", e.target.value);
+                    }}
+                  />
+                  {formik.errors.email && (
+                    <p className="text-[red] text-[14px] mb-[6px]">
+                      {formik.errors.email}
+                    </p>
+                  )}
+                </div>
+              </div>
+              <div class=" mb-6">
+                <div class="w-full ">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-[#fff]"
+                    for="grid-message"
+                  >
+                    Message
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-message"
+                    type="text"
+                    placeholder="message"
+                    value={formik.values.message}
+                    onChange={(e) => {
+                      console.log(e.target.value);
+                      formik.setFieldValue("message", e.target.value);
+                    }}
+                  />
+                  {formik.errors.message && (
+                    <p className="text-[red] text-[14px] mb-[6px]">
+                      {formik.errors.message}
+                    </p>
+                  )}
+                </div>
+              </div>
+              <div class=" mb-6">
+                <div class="w-full ">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 dark:text-[#fff]"
+                    for="grid-details"
+                  >
+                    Additional Details
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-details"
+                    type="text"
+                    placeholder="details"
+                    value={formik.values.message}
+                    onChange={(e) => {
+                      console.log(e.target.value);
+                      formik.setFieldValue("details", e.target.value);
+                    }}
+                  />
+                  {formik.errors.details && (
+                    <p className="text-[red] text-[14px] mb-[6px]">
+                      {formik.errors.details}
+                    </p>
+                  )}
+                </div>
+              </div>
+              <div className="mt-5">
+                <button
+                  className="px-[64px] py-[17px] bg-[#E5B250] rounded-[5px] text-[20px] font-bold text-[#FFFFFF] w-full hover:bg-[#F87B50]"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+            <div className="mt-5">{message}</div>
+          </div>
+          <div className="flex flex-col justify-around">
+            <div className="flex flex-col gap-10">
+              <p className="text-[#080C2E] text-[23px] lg:text-[46px] font-semibold text-center dark:text-white">Contact Information</p>
+              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] dark:text-white">#7th Street, abc , Mauritania North West Africa 425680 </p>
+              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] dark:text-white">41165116</p>
+              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] dark:text-white">mail@dvjnv</p>
+            </div>
+            <div>
+              <div className="w-auto lg:w-[500px]">
+                <p className="pb-3 text-[#080C2E] dark:text-[#fff] text-[20px]">Trusted by</p>
+                <ImageScroll/>
+              </div>
+            </div>
+          </div>
         </div>
-        <p className="text-[100px] text-center text-black font-semibold">
-          Contact
-        </p>
       </div>
+      <Footer />
     </Page>
   );
 }
 
-export default MyComponent;
-
-// export default function Contact(){
-//   return(
-//     <Page>
-//       <div className="max-w-screen-xl mx-auto px-[16px">
-//         <p className="text-[100px] text-center text-black font-semibold">Contact</p>
-//       </div>
-//     </Page>
-//   )
-// }
+export default Contact;

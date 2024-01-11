@@ -15,7 +15,7 @@ import digital from "/public/Images/digital.svg";
 import commercial from "/public/Images/commercial.svg";
 import ImageScroll from "@/components/imagescroll";
 import Accordian from "@/components/accordian";
-// import TypeWriterEffect from 'react-typewriter-effect';
+import Footer from "@/components/footer";
 import React from "react";
 import { useRef } from "react";
 import Typewrite from "@/components/Typewrite";
@@ -42,7 +42,7 @@ export default function Home() {
             </p>
             <div>
               <button className="rounded-[100px] py-4 px-10 bg-[#E5B250] hover:bg-[#F87B50] text-white dark:bg-white dark:text-black">
-                explore more
+                Explore more
               </button>
             </div>
           </div>
@@ -365,6 +365,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     </Page>
   );

@@ -20,7 +20,7 @@ const Typewrite = () => {
           {/* Style will be inherited from the parent element */}
           <Typewriter
             words={['Tools that can be used as lectures']}
-            loop={{isFinite}}
+            loop={true}
             cursor
             cursorStyle='.'
             typeSpeed={100}

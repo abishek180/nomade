@@ -5,16 +5,21 @@ import { IoMailOutline } from "react-icons/io5";
 import { LuPhone } from "react-icons/lu";
 import { FiGlobe } from "react-icons/fi";
 import { TfiVideoClapper } from "react-icons/tfi";
+import { useRouter } from 'next/router';
 
-const footer = () => {
+
+const Footer = () => {
+  const router = useRouter();
+  const pathname = router.pathname;
+  console.log(pathname);
   return (
     <footer>
       <div className="bg-[#070C29] relative">
-        <div className="pt-80 max-w-screen-xl mx-auto px-[16px]">
+        <div className={`${pathname === '/contact'? "py-20" : "pt-80"} max-w-screen-xl mx-auto px-[16px]`}>
           <div className="flex flex-col gap-[250px] lg:flex-row justify-between">
             <div className="w-[80px] h-[46px] lg:w-[112px] lg:h-[46px] flex flex-col gap-12">
               <Image src={logo} className="w-[100%]" alt="logo" />
-              <p className="w-[301px] h-[56px] text-[#8D90A8] text-[16px] font-medium leading-[28px]">
+              <p className="w-[250px] h-[56px] text-[#8D90A8] text-[16px] font-medium leading-[28px]">
                 #7th Street, abc , Mauritania North West Africa 425680{" "}
               </p>
               <div className="flex gap-5">
@@ -69,10 +74,13 @@ const footer = () => {
               </div>
             </div>
           </div>
+          <div className="flex justify-center items-center pt-[50px] pb-[20px]">
+            <p className="text-[#61647D] text-[16px] font-medium">All Rights Reserved • Copyright Weserve by Nomade Agency  2024 in India</p>
+          </div>
         </div>
       </div>
     </footer>
   );
 };
 
-export default footer;
+export default Footer;
