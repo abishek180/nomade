@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-// import Link from "next/link";
+import Link from "next/link";
 import Image from "next/image";
 import logo from "/public/Images/Rectangle.png";
 import { TbMenuDeep } from "react-icons/tb";
@@ -11,31 +11,42 @@ import { MdClose } from "react-icons/md";
 export default function Header() {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState(0);
 
   const handleNav = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const handleMenuItemClick = (index) => {
+    setActiveItem(index);
+    handleNav(); // Close the menu after clicking on a menu item
   };
 
   const menu = [
     {
       title: "Home",
       href: "/",
+      index: 0,
     },
     {
       title: "Features",
       href: "#features",
+      index: 1,
     },
     {
       title: "Services",
       href: "#services",
+      index: 2,
     },
     {
       title: "Projects",
       href: "#projects",
+      index: 3,
     },
     {
       title: "Contact Us",
       href: "/contact",
+      index: 4,
     },
   ];
 
@@ -50,9 +61,14 @@ export default function Header() {
         <div className="hidden lg:block dark:text-white">
           <ul className="flex gap-10">
             {menu.map((item, index) => (
-              <li className="hover:text-[#F87B50]" key={index}>
-                <a href={item.href}>{item.title}</a>
-              </li>
+              // <li className="hover:text-[#F87B50]" key={index}>
+              //   <a href={item.href}>{item.title}</a>
+              // </li>
+              <li className={`hover:text-[#F87B50] ${activeItem === item.index ? 'active' : ''}`} key={item.index}>
+              <a href={item.href} onClick={() => handleMenuItemClick(item.index)}>
+                {item.title}
+              </a>
+            </li>
             ))}
           </ul>
         </div>
@@ -66,7 +82,7 @@ export default function Header() {
               <TbMenuDeep size={30} onClick={handleNav} />
             </div>
             <button className="rounded-[100px] bg-[#15162F] py-[10px] px-[30px] text-white hover:bg-[#F87B50] dark:bg-white dark:text-black hidden lg:block">
-              Get in touch
+             <Link href="/contact">Get in touch</Link> 
             </button>
           </div>
         </div>

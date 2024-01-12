@@ -4,7 +4,7 @@ import Image from "next/image";
 
 // Define a context with all images from the 'companies' folder
 const companyImagesContext = require.context(
-  "/public/company",
+  "/public/logos",
   false,
   /\.(png|jpe?g|svg)$/
 );
@@ -33,7 +33,7 @@ const ImageScroll = () => {
           return (
             <li key={index}>
               <Image
-                className="w-24 aspect-[6/2] object-contain 2xl:w-auto"
+                className="w-28 aspect-[3/2] object-contain 2xl:w-auto"
                 src={imagePath}
                 alt={`Company Image ${index + 1}`}
               />
@@ -51,7 +51,7 @@ const ImageScroll = () => {
           return (
             <li key={index}>
               <Image
-                className="w-24 aspect-[6/2] object-contain 2xl:w-auto"
+                className="w-28 aspect-[3/2] object-contain 2xl:w-auto"
                 src={imagePath}
                 alt={`Company Image ${index + 1}`}
               />

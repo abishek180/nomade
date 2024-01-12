@@ -72,7 +72,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       animation: {
-        "infinite-scroll": "infinite-scroll 35s linear infinite",
+        "infinite-scroll": "infinite-scroll 45s linear infinite",
       },
       keyframes: {
         "infinite-scroll": {

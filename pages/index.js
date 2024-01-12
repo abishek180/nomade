@@ -4,7 +4,7 @@ import png from "/public/Images/Rectangle 3.png";
 import png1 from "/public/Images/jcb.jpg";
 import png2 from "/public/Images/rectangle2.png";
 import png3 from "/public/Images/rectangle3.png";
-import png4 from "/public/Images/rectangle4.png";
+import png4 from "/public/Images/Rectangle 4.png";
 import Swiper from "@/components/swiper";
 import Card from "@/components/card";
 import { FiGlobe } from "react-icons/fi";
@@ -22,6 +22,12 @@ import Typewrite from "@/components/Typewrite";
 import Link from "next/link";
 import { TiMessages } from "react-icons/ti";
 import $ from 'jquery';
+import logo1 from "/public/logos/logo-1.png"
+import logo2 from "/public/logos/logo-7.png"
+import logo3 from "/public/logos/logo-3.png"
+import logo4 from "/public/logos/logo-10.png"
+import logo5 from "/public/logos/logo-13.png"
+import logo6 from "/public/logos/logo-8.png"
 
 
 export default function Home() {
@@ -63,7 +69,7 @@ export default function Home() {
                 Explore more
               </button>
               <div>
-                <Link href="/contact" className="text-[#E5B250] text-[12px] lg:text-[16px] font-semibold flex"><TiMessages/>Contact Us</Link>
+                <Link href="/contact" className="text-[#E5B250] text-[12px] lg:text-[16px] font-semibold flex gap-1 items-center"><span><TiMessages/></span>Contact Us</Link>
               </div>
             </div>
           </div>
@@ -216,29 +222,29 @@ export default function Home() {
         </section>
         <div className="w-full h-auto lg:h-[322px] bg-[#303553] flex items-center dark:bg-black overflow-hidden">
           <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center max-w-screen-xl mx-auto pt-20  px-[16px] py-20 gap-10 lg:gap-[125px] overflow-hidden">
-            <div className="w-[250px] lg:w-[336px] h-[151px] mor relative flex flex-col justify-center items-center">
-              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] hover:text-[#E5B250]">
+            <div className="group w-[250px] lg:w-[336px] h-[151px] mor relative flex flex-col justify-center items-center">
+              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] group-hover:text-[#E5B250]">
                 100+
               </h1>
-              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] hover:text-[#E5B250]">
+              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] group-hover:text-[#E5B250]">
                 Clients
               </p>
               <div className="w-[80px] h-[94px] bg-[#303553] dark:bg-black absolute rotate-45 -bottom-[43px] -right-[36px] bl"></div>
             </div>
-            <div className="w-[250px] lg:w-[336px] h-[151px] mor relative flex flex-col justify-center items-center">
-              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] hover:text-[#E5B250]">
+            <div className="group w-[250px] lg:w-[336px] h-[151px] mor relative flex flex-col justify-center items-center">
+              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] group-hover:text-[#E5B250]">
                 +80%
               </h1>
-              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] hover:text-[#E5B250]">
+              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] group-hover:text-[#E5B250]">
                 Completed
               </p>
               <div className="w-[80px] h-[95px] bg-[#303553] dark:bg-black absolute rotate-45 -bottom-[43px] -right-[36px] bl"></div>
             </div>
-            <div className="w-[250px] lg:w-[336px] h-[151px] mor relative flex flex-col justify-center items-center sm:mb-20 md:mb-0 lg:mb-0">
-              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] hover:text-[#E5B250]">
+            <div className="group w-[250px] lg:w-[336px] h-[151px] mor relative flex flex-col justify-center items-center sm:mb-20 md:mb-0 lg:mb-0">
+              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] group-hover:text-[#E5B250]">
                 1230+
               </h1>
-              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] hover:text-[#E5B250]">
+              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] group-hover:text-[#E5B250]">
                 New Project
               </p>
               <div className="w-[80px] h-[95px] bg-[#303553] dark:bg-black absolute rotate-45 -bottom-[43px] -right-[36px] bl"></div>
@@ -364,23 +370,23 @@ export default function Home() {
             </div>
             <div className="hidden lg:block">
               <div className="grid grid-cols-3 gap-6">
-                <div className="py-14 px-14 bg-[#fff] rounded-[26px]">
-                  <FiGlobe size={40} />
+                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E]">
+                  <Image src={logo1} width={150}/>
                 </div>
-                <div className="py-14 px-14 bg-[#fff] rounded-[26px]">
-                  <FiGlobe size={40} />
+                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E]">
+                <Image src={logo2} width={150}/>
                 </div>
-                <div className="py-14 px-14 bg-[#fff] rounded-[26px]">
-                  <FiGlobe size={40} />
+                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E]">
+                <Image src={logo3} width={150}/>
                 </div>
-                <div className="py-14 px-14 bg-[#fff] rounded-[26px]">
-                  <FiGlobe size={40} />
+                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E]">
+                <Image src={logo4} width={150}/>
                 </div>
-                <div className="py-14 px-14 bg-[#fff] rounded-[26px]">
-                  <FiGlobe size={40} />
+                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E]">
+                <Image src={logo5} width={150}/>
                 </div>
-                <div className="py-14 px-14 bg-[#fff] rounded-[26px]">
-                  <FiGlobe size={40} />
+                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E]">
+                <Image src={logo6} width={150}/>
                 </div>
               </div>
             </div>

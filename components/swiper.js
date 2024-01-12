@@ -7,7 +7,7 @@ import Image from 'next/image';
 import png1 from "/public/Images/jcb.jpg"
 import png2 from "/public/Images/rectangle2.png"
 import png3 from "/public/Images/rectangle3.png"
-import png4 from "/public/Images/rectangle4.png"
+import png4 from "/public/Images/Rectangle 4.png"
 
 export default function Slide() {
   return (

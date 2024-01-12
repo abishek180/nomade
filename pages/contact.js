@@ -19,8 +19,8 @@ function Contact() {
 
   const formik = useFormik({
     initialValues: {
-      name: "",
-      radio: "",
+      firstname: "",
+      lastname: "",
       email: "",
       message:"",
      
@@ -31,7 +31,8 @@ function Contact() {
     validateOnChange: false,
 
     validationSchema: yup.object().shape({
-      name: yup.string().required("Required"),
+      firstname: yup.string().required("Required"),
+      lastname: yup.string().required("Required"),
       radio: yup.string().required("Required"),
       email: yup.string().required("Must be a valid email address"),
     }),
@@ -44,9 +45,9 @@ function Contact() {
           "service_bqhvp46",
           "template_e7wa7ls",
           {
-            to_name: e.name,
+            firstname: e.firstname,
+            lastname: e.lastname,
             email: e.email,
-            number: e.number,
           },
           "kFZTDWpSoa3dQ7HQ9"
         )
@@ -97,15 +98,15 @@ function Contact() {
                     YOUR
                     NAME
                     placeholder=""
-                    value={formik.values.name}
+                    value={formik.values.firstname}
                     onChange={(e) => {
                       console.log(e.target.value);
-                      formik.setFieldValue("name", e.target.value);
+                      formik.setFieldValue("firstname", e.target.value);
                     }}
                   />
-                  {formik.errors.name && (
+                  {formik.errors.firstname && (
                     <p className="text-[red] text-[14px] mb-[6px]">
-                      {formik.errors.name}
+                      {formik.errors.firstname}
                     </p>
                   )}
                 </div>
@@ -124,15 +125,15 @@ function Contact() {
                     YOUR
                     NAME
                     placeholder=""
-                    value={formik.values.name}
+                    value={formik.values.lastname}
                     onChange={(e) => {
                       console.log(e.target.value);
-                      formik.setFieldValue("name", e.target.value);
+                      formik.setFieldValue("lastname", e.target.value);
                     }}
                   />
-                  {formik.errors.name && (
+                  {formik.errors.lastname && (
                     <p className="text-[red] text-[14px] mb-[6px]">
-                      {formik.errors.name}
+                      {formik.errors.lastname}
                     </p>
                   )}
                 </div>
@@ -146,7 +147,7 @@ function Contact() {
                     Email
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="grid-email"
                     type="email"
                     placeholder="Enter your email"
@@ -172,7 +173,7 @@ function Contact() {
                     Message
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="grid-message"
                     type="text"
                     placeholder="message"
@@ -198,7 +199,7 @@ function Contact() {
                     Additional Details
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="grid-details"
                     type="text"
                     placeholder="details"

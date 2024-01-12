@@ -23,16 +23,16 @@ const Footer = () => {
                 #7th Street, abc , Mauritania North West Africa 425680{" "}
               </p>
               <div className="flex gap-5">
-                <div className="rounded-[100px] p-[10px] bg-[#fff]">
+                <div className="rounded-[100px] p-[10px] bg-[#fff] hover:bg-[#F87B50]">
                   <IoMailOutline color="#E5B250" size={24} />
                 </div>
-                <div className="rounded-[100px] p-[10px] bg-[#fff]">
+                <div className="rounded-[100px] p-[10px] bg-[#fff] hover:bg-[#F87B50]">
                   <LuPhone color="#E5B250" size={24} />
                 </div>
-                <div className="rounded-[100px] p-[10px] bg-[#fff]">
+                <div className="rounded-[100px] p-[10px] bg-[#fff] hover:bg-[#F87B50]">
                   <FiGlobe color="#E5B250" size={24} />
                 </div>
-                <div className="rounded-[100px] p-[10px] bg-[#fff]">
+                <div className="rounded-[100px] p-[10px] bg-[#fff] hover:bg-[#F87B50]">
                   <TfiVideoClapper color="#E5B250" size={24} />
                 </div>
               </div>
