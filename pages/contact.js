@@ -8,6 +8,11 @@ import emailjs from "@emailjs/browser";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import ImageScroll from "@/components/imagescroll";
+import { ImLocation } from "react-icons/im";
+import { LuPhone } from "react-icons/lu";
+import { IoMdMail } from "react-icons/io";
+
+
 
 function Contact() {
   const [message, setMessage] = useState("");
@@ -69,7 +74,7 @@ function Contact() {
   return (
     <Page>
       <div className="max-w-screen-xl mx-auto px-[16px]">
-        <div className="flex flex-col lg:flex lg:flex-row gap-20 bg-[#fff] dark:bg-black">
+        <div className="flex flex-col lg:flex lg:flex-row gap-20 bg-[#fff] dark:bg-black py-20">
           <div className="flex flex-col justify-between items-center">
             <form
               class="flex flex-col"
@@ -221,15 +226,15 @@ function Contact() {
             </form>
             <div className="mt-5">{message}</div>
           </div>
-          <div className="flex flex-col justify-around">
+          <div className="flex flex-col justify-evenly">
             <div className="flex flex-col gap-10">
-              <p className="text-[#080C2E] text-[23px] lg:text-[46px] font-semibold text-center dark:text-white">Contact Information</p>
-              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] dark:text-white">#7th Street, abc , Mauritania North West Africa 425680 </p>
-              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] dark:text-white">41165116</p>
-              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] dark:text-white">mail@dvjnv</p>
+              <p className="text-[#080C2E] text-[23px] lg:text-[46px] font-semibold dark:text-white">Contact Information</p>
+              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] flex items-center gap-3 dark:text-white"><span><ImLocation/></span>#7th Street, abc , Mauritania North West Africa 425680 </p>
+              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] flex items-center gap-3 dark:text-white"><span><LuPhone/></span>41165116</p>
+              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] flex items-center gap-3 dark:text-white"><span><IoMdMail/></span>mail@dvjnv</p>
             </div>
             <div>
-              <div className="w-auto lg:w-[500px]">
+              <div className="w-auto lg:w-[600px]">
                 <p className="pb-3 text-[#080C2E] dark:text-[#fff] text-[20px]">Trusted by</p>
                 <ImageScroll/>
               </div>

@@ -19,6 +19,7 @@ import Footer from "@/components/footer";
 import React, { useEffect } from "react";
 import { useRef } from "react";
 import Typewrite from "@/components/Typewrite";
+import Link from "next/link";
 import { TiMessages } from "react-icons/ti";
 import $ from 'jquery';
 
@@ -50,7 +51,7 @@ export default function Home() {
               </span>
               We host more than 120,000 websites
             </p>
-            <h1 className="text-[40px] lg:text-[70px] text-[#080C2E] font-semibold leading-[100%] pt-5 dark:text-white">
+            <h1 className="text-[40px] lg:text-[60px] text-[#080C2E] font-semibold leading-[100%] pt-5 dark:text-white">
               <Typewrite />
             </h1>
             <p className="text-[#5D5D7C] text-[10px] lg:text-[16px] font-medium leading-[20px] pt-3 lg:pt-2">
@@ -62,7 +63,7 @@ export default function Home() {
                 Explore more
               </button>
               <div>
-                <a href="/contact" className="text-[#E5B250] text-[12px] lg:text-[16px] font-semibold flex"><TiMessages/>Contact Us</a>
+                <Link href="/contact" className="text-[#E5B250] text-[12px] lg:text-[16px] font-semibold flex"><TiMessages/>Contact Us</Link>
               </div>
             </div>
           </div>
@@ -357,7 +358,7 @@ export default function Home() {
               </div>
               <div className="pt-3">
                 <button className="rounded-[100px] py-4 px-10 bg-[#E5B250] hover:bg-[#F87B50] font-bold text-[#080C2E] dark:bg-white dark:text-black">
-                 <a href="/contact">Contact Us</a> 
+                 <Link href="/contact">Contact Us</Link> 
                 </button>
               </div>
             </div>

@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="bg-[#070C29] relative">
-        <div className={`${pathname === '/contact'? "py-20" : "pt-80"} max-w-screen-xl mx-auto px-[16px]`}>
+        <div className={`${pathname === '/contact'? "pt-20" : "pt-80"} max-w-screen-xl mx-auto px-[16px]`}>
           <div className="flex flex-col gap-[250px] lg:flex-row justify-between">
             <div className="w-[80px] h-[46px] lg:w-[112px] lg:h-[46px] flex flex-col gap-12">
               <Image src={logo} className="w-[100%]" alt="logo" />

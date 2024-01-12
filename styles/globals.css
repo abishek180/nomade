@@ -101,7 +101,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #E5B250;
+  background-color: black;
   transform-origin: bottom;
 }
 .slide-out{
