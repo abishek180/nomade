@@ -85,7 +85,7 @@ function Contact() {
                     First Name
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    class="appearance-none block w-full text-gray-700 border rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-1 outline-[#E5B250] focus:bg-white"
                     id="grid-first-name"
                     type="text"
                     YOUR
@@ -112,7 +112,7 @@ function Contact() {
                     Last Name
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    class="appearance-none block w-full text-gray-700 border rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-1 outline-[#E5B250] focus:bg-white"
                     id="grid-last-name"
                     type="text"
                     YOUR
@@ -140,7 +140,7 @@ function Contact() {
                     Email
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    class="appearance-none block w-full text-gray-700 border border-gray-200 rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-1 outline-[#E5B250] focus:bg-white"
                     id="grid-email"
                     type="email"
                     placeholder="Enter your email"
@@ -166,7 +166,7 @@ function Contact() {
                     Message
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    class="appearance-none block w-full text-gray-700 border border-gray-200 rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-1 outline-[#E5B250] focus:bg-white"
                     id="grid-message"
                     type="text"
                     placeholder=""
@@ -192,7 +192,7 @@ function Contact() {
                     Additional Details
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    class="appearance-none block w-full text-gray-700 border border-gray-200 rounded-[3px] py-10 px-4 mb-3 leading-tight focus:outline-1 outline-[#E5B250] focus:bg-white"
                     id="grid-details"
                     type="text"
                     placeholder=""

@@ -6,6 +6,7 @@ import { LuPhone } from "react-icons/lu";
 import { FiGlobe } from "react-icons/fi";
 import { TfiVideoClapper } from "react-icons/tfi";
 import { useRouter } from 'next/router';
+import Link from "next/link";
 
 
 const Footer = () => {
@@ -23,16 +24,16 @@ const Footer = () => {
                 #7th Street, abc , Mauritania North West Africa 425680{" "}
               </p>
               <div className="flex gap-5">
-                <div className="rounded-[100px] p-[10px] bg-[#fff] hover:bg-[#F87B50]">
+                <div className="rounded-[100px] p-[10px] bg-[#fff] hover:bg-[#F87B50] hover:duration-300">
                   <IoMailOutline color="#E5B250" size={24} />
                 </div>
-                <div className="rounded-[100px] p-[10px] bg-[#fff] hover:bg-[#F87B50]">
+                <div className="rounded-[100px] p-[10px] bg-[#fff] hover:bg-[#F87B50] hover:duration-300">
                   <LuPhone color="#E5B250" size={24} />
                 </div>
-                <div className="rounded-[100px] p-[10px] bg-[#fff] hover:bg-[#F87B50]">
+                <div className="rounded-[100px] p-[10px] bg-[#fff] hover:bg-[#F87B50] hover:duration-300">
                   <FiGlobe color="#E5B250" size={24} />
                 </div>
-                <div className="rounded-[100px] p-[10px] bg-[#fff] hover:bg-[#F87B50]">
+                <div className="rounded-[100px] p-[10px] bg-[#fff] hover:bg-[#F87B50] hover:duration-300">
                   <TfiVideoClapper color="#E5B250" size={24} />
                 </div>
               </div>
@@ -40,36 +41,36 @@ const Footer = () => {
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-60 pr-0 lg:pr-40">
               <div className="flex flex-col gap-5 lg:gap-[30px]">
                 <p className="text-[#fff] text-[18px] font-bold leading-normal">
-                  Home
+                  <Link href="/">Home</Link>
                 </p>
-                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal">
-                  Services
+                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal hover:text-[#fff]">
+                  <Link href="/">Services</Link>
                 </p>
-                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal">
-                  FAQ
+                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal hover:text-[#fff]">
+                  <Link href="/">FAQ</Link>
                 </p>
-                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal">
-                  Auto-Backup
+                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal hover:text-[#fff]">
+                  <Link href="/">Auto-Backup</Link>
                 </p>
-                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal">
+                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal hover:text-[#fff]">
                   Contact
                 </p>
               </div>
               <div className="flex flex-col gap-5 lg:gap-[30px]">
                 <p className="text-[#fff] text-[18px] font-bold leading-normal">
-                  Company
+                   <Link href="/">Company</Link>
                 </p>
-                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal">
-                  Privacy and Policy
+                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal hover:text-[#fff]">
+                   <Link href="/">Privacy and Policy</Link>
                 </p>
-                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal">
-                  Terms and Conditions
+                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal hover:text-[#fff]">
+                   <Link href="/">Terms and Conditions</Link>
                 </p>
-                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal">
-                  Join With Us
+                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal hover:text-[#fff]">
+                   <Link href="/">Join With Us</Link>
                 </p>
-                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal">
-                  Our Statistics
+                <p className="text-[#8D90A8] text-[16px] font-medium leading-normal hover:text-[#fff]">
+                   <Link href="/">Our Statistics</Link>
                 </p>
               </div>
             </div>

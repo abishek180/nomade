@@ -33,7 +33,7 @@ const ImageScroll = () => {
           return (
             <li key={index}>
               <Image
-                className="w-28 aspect-[3/2] object-contain 2xl:w-auto"
+                className="w-24 aspect-[3/2] object-contain 2xl:w-auto"
                 src={imagePath}
                 alt={`Company Image ${index + 1}`}
               />
@@ -51,7 +51,7 @@ const ImageScroll = () => {
           return (
             <li key={index}>
               <Image
-                className="w-28 aspect-[3/2] object-contain 2xl:w-auto"
+                className="w-24 aspect-[3/2] object-contain 2xl:w-auto"
                 src={imagePath}
                 alt={`Company Image ${index + 1}`}
               />

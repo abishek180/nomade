@@ -65,11 +65,11 @@ export default function Home() {
               reports, and more it is mostly presented.
             </p>
             <div className="flex items-center gap-20 pt-10">
-              <button className="rounded-[100px] py-4 px-10 text-[12px] lg:text-[16px] bg-[#E5B250] hover:bg-[#F87B50] text-white dark:bg-white dark:text-black">
-                Explore more
+              <button className="rounded-[100px] py-4 px-10 text-[12px] lg:text-[16px] font-bold bg-[#E5B250] hover:bg-[#F87B50] hover:duration-100 text-white dark:bg-white dark:text-black">
+                <a href="#footer">Explore more</a>
               </button>
               <div>
-                <Link href="/contact" className="text-[#E5B250] text-[12px] lg:text-[16px] font-semibold flex gap-1 items-center"><span><TiMessages/></span>Contact Us</Link>
+                <Link href="/contact" className="text-[#E5B250] text-[12px] lg:text-[16px] font-semibold flex gap-1 items-center hover:text-[#F87B50]"><span><TiMessages/></span>Contact Us</Link>
               </div>
             </div>
           </div>
@@ -223,28 +223,28 @@ export default function Home() {
         <div className="w-full h-auto lg:h-[322px] bg-[#303553] flex items-center dark:bg-black overflow-hidden">
           <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center max-w-screen-xl mx-auto pt-20  px-[16px] py-20 gap-10 lg:gap-[125px] overflow-hidden">
             <div className="group w-[250px] lg:w-[336px] h-[151px] mor relative flex flex-col justify-center items-center">
-              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] group-hover:text-[#E5B250]">
+              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] group-hover:text-[#E5B250] hover:duration-300">
                 100+
               </h1>
-              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] group-hover:text-[#E5B250]">
+              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] group-hover:text-[#E5B250] hover:duration-300">
                 Clients
               </p>
               <div className="w-[80px] h-[94px] bg-[#303553] dark:bg-black absolute rotate-45 -bottom-[43px] -right-[36px] bl"></div>
             </div>
             <div className="group w-[250px] lg:w-[336px] h-[151px] mor relative flex flex-col justify-center items-center">
-              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] group-hover:text-[#E5B250]">
+              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] group-hover:text-[#E5B250] hover:duration-300">
                 +80%
               </h1>
-              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] group-hover:text-[#E5B250]">
+              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] group-hover:text-[#E5B250] hover:duration-300">
                 Completed
               </p>
               <div className="w-[80px] h-[95px] bg-[#303553] dark:bg-black absolute rotate-45 -bottom-[43px] -right-[36px] bl"></div>
             </div>
             <div className="group w-[250px] lg:w-[336px] h-[151px] mor relative flex flex-col justify-center items-center sm:mb-20 md:mb-0 lg:mb-0">
-              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] group-hover:text-[#E5B250]">
+              <h1 className="text-[50px] lg:text-[48px] font-bold leading-[96px] text-[#fff] group-hover:text-[#E5B250] hover:duration-300">
                 1230+
               </h1>
-              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] group-hover:text-[#E5B250]">
+              <p className="text-[16px] lg:text-[24px] font-normal leading-8 text-[#ccc] group-hover:text-[#E5B250] hover:duration-300">
                 New Project
               </p>
               <div className="w-[80px] h-[95px] bg-[#303553] dark:bg-black absolute rotate-45 -bottom-[43px] -right-[36px] bl"></div>
@@ -276,7 +276,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
+            <div className="h-full p-2 lg:h-[252.679px] shadow-xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
               <div className="w-full rounded-[21px] overflow-hidden">
                 <Image
                   src={png1}
@@ -290,7 +290,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
+            <div className="h-full p-2 lg:h-[252.679px] shadow-xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
               <div className="w-full rounded-[21px] overflow-hidden">
                 <Image
                   src={png2}
@@ -304,7 +304,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
+            <div className="h-full p-2 lg:h-[252.679px] shadow-xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
               <div className="w-full rounded-[21px] overflow-hidden">
                 <Image
                   src={png3}
@@ -318,7 +318,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="h-full p-2 lg:h-[252.679px] shadow-2xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
+            <div className="h-full p-2 lg:h-[252.679px] shadow-xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
               <div className="w-full rounded-[21px] overflow-hidden">
                 <Image
                   src={png4}
@@ -344,7 +344,7 @@ export default function Home() {
             <Accordian />
           </div>
         </div>
-        <section className="max-w-screen-xl mx-auto px-[16px]">
+        <section className="max-w-screen-xl mx-auto px-[16px]"id="footer">
           <div className="flex gap-5 justify-between bg-[#F87B50] h-auto lg:h-[465px] w-[calc(100%_-_5%)] mx-auto relative -bottom-[200px] rounded-[16px] z-30 p-[50px]">
             <div className="flex flex-col gap-8">
               <p className="flex gap-1 text-[14px] lg:text-[16px] text-[#080C2E] font-semibold bg-[#fff] py-2 px-4 rounded-[16px]">
@@ -363,29 +363,29 @@ export default function Home() {
                 </p>
               </div>
               <div className="pt-3">
-                <button className="rounded-[100px] py-4 px-10 bg-[#E5B250] hover:bg-[#F87B50] font-bold text-[#080C2E] dark:bg-white dark:text-black">
+                <button className="rounded-[100px] py-4 px-10 bg-[#E5B250] hover:bg-[#080C2E] hover:duration-300 hover:text-white font-bold text-[#080C2E]">
                  <Link href="/contact">Contact Us</Link> 
                 </button>
               </div>
             </div>
             <div className="hidden lg:block">
               <div className="grid grid-cols-3 gap-6">
-                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E]">
+                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E] hover:duration-300">
                   <Image src={logo1} width={150}/>
                 </div>
-                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E]">
+                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E] hover:duration-300">
                 <Image src={logo2} width={150}/>
                 </div>
-                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E]">
+                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E] hover:duration-300">
                 <Image src={logo3} width={150}/>
                 </div>
-                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E]">
+                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E] hover:duration-300">
                 <Image src={logo4} width={150}/>
                 </div>
-                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E]">
+                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E] hover:duration-300">
                 <Image src={logo5} width={150}/>
                 </div>
-                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E]">
+                <div className=" bg-[#fff] rounded-[26px] flex items-center justify-center hover:bg-[#080C2E] hover:duration-300">
                 <Image src={logo6} width={150}/>
                 </div>
               </div>

@@ -54,7 +54,7 @@ export default function Header() {
   return (
     <div className="w-full fixed top-0 z-[999] border-b-[1px] border-[#DCE1FD] bg-white/30 backdrop-blur-[20px] backdrop-filter py-[20px]">
       <nav className="flex max-w-screen-xl mx-auto justify-between items-center px-[16px]">
-        <div className="w-[80px] h-[46px] lg:w-[112px] lg:h-[46px] flex  justify-center items-center">
+        <div className="w-[80px] h-[46px] lg:w-[122px] lg:h-[46px] flex justify-center items-center">
           <a href="#home">
             <Image src={logo} className="w-[100%]" alt="logo" />
           </a>
@@ -62,9 +62,6 @@ export default function Header() {
         <div className="hidden lg:block dark:text-white">
           <ul className="flex gap-10">
             {menu.map((item, index) => (
-              // <li className="hover:text-[#F87B50]" key={index}>
-              //   <a href={item.href}>{item.title}</a>
-              // </li>
               <li className={`hover:text-[#F87B50] ${activeItem === item.index ? 'active' : ''}`} key={item.index}>
               <a href={item.href} onClick={() => handleMenuItemClick(item.index)}>
                 {item.title}
@@ -82,7 +79,7 @@ export default function Header() {
             <div className="block lg:hidden">
               <TbMenuDeep size={30} onClick={handleNav} />
             </div>
-            <button className="rounded-[100px] bg-[#15162F] py-[10px] px-[30px] text-white hover:bg-[#F87B50] dark:bg-white dark:text-black hidden lg:block">
+            <button className="rounded-[100px] bg-[#15162F] py-[10px] px-[30px] text-white hover:bg-[#F87B50] hover:duration-300 dark:bg-white dark:text-black hidden lg:block">
              <Link href="/contact">Get in touch</Link> 
             </button>
           </div>
