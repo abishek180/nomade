@@ -344,7 +344,7 @@ export default function Home() {
             <Accordian />
           </div>
         </div>
-        <div className="max-w-screen-xl mx-auto px-[16px]">
+        <section className="max-w-screen-xl mx-auto px-[16px]">
           <div className="flex gap-5 justify-between bg-[#F87B50] h-auto lg:h-[465px] w-[calc(100%_-_5%)] mx-auto relative -bottom-[200px] rounded-[16px] z-30 p-[50px]">
             <div className="flex flex-col gap-8">
               <p className="flex gap-1 text-[14px] lg:text-[16px] text-[#080C2E] font-semibold bg-[#fff] py-2 px-4 rounded-[16px]">
@@ -391,7 +391,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <Footer/>
       </div>
     </Page>

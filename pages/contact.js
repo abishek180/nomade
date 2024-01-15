@@ -1,9 +1,6 @@
 import Page from "@/components/page";
 import Footer from "@/components/footer";
 import React, { useState } from "react";
-import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import FormControl from "@mui/material/FormControl";
 import emailjs from "@emailjs/browser";
 import { useFormik } from "formik";
 import * as yup from "yup";
@@ -11,8 +8,7 @@ import ImageScroll from "@/components/imagescroll";
 import { ImLocation } from "react-icons/im";
 import { LuPhone } from "react-icons/lu";
 import { IoMdMail } from "react-icons/io";
-
-
+import Modal from "/components/Modal"
 
 function Contact() {
   const [message, setMessage] = useState("");
@@ -22,8 +18,6 @@ function Contact() {
       firstname: "",
       lastname: "",
       email: "",
-      message:"",
-     
     },
 
     enableReinitialize: true,
@@ -33,7 +27,6 @@ function Contact() {
     validationSchema: yup.object().shape({
       firstname: yup.string().required("Required"),
       lastname: yup.string().required("Required"),
-      radio: yup.string().required("Required"),
       email: yup.string().required("Must be a valid email address"),
     }),
 
@@ -42,14 +35,14 @@ function Contact() {
 
       emailjs
         .send(
-          "service_bqhvp46",
-          "template_e7wa7ls",
+          "service_qd6cmqg",
+          "template_b7i3evk",
           {
             firstname: e.firstname,
             lastname: e.lastname,
             email: e.email,
           },
-          "kFZTDWpSoa3dQ7HQ9"
+          "6t6iLK760DTrIj2Fk"
         )
         .then(
           (result) => {
@@ -60,6 +53,8 @@ function Contact() {
                     Thanks for getting in touch. Our team will contact you
                     within 48 hours.
                   </span>
+                  <Modal/>
+                 
                 </div>
               );
             }
@@ -176,7 +171,7 @@ function Contact() {
                     class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="grid-message"
                     type="text"
-                    placeholder="message"
+                    placeholder=""
                     value={formik.values.message}
                     onChange={(e) => {
                       console.log(e.target.value);
@@ -202,8 +197,8 @@ function Contact() {
                     class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[3px] py-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="grid-details"
                     type="text"
-                    placeholder="details"
-                    value={formik.values.message}
+                    placeholder=""
+                    value={formik.values.details}
                     onChange={(e) => {
                       console.log(e.target.value);
                       formik.setFieldValue("details", e.target.value);
@@ -229,15 +224,34 @@ function Contact() {
           </div>
           <div className="flex flex-col justify-evenly">
             <div className="flex flex-col gap-10">
-              <p className="text-[#080C2E] text-[23px] lg:text-[46px] font-semibold dark:text-white">Contact Information</p>
-              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] flex items-center gap-3 dark:text-white"><span><ImLocation/></span>#7th Street, abc , Mauritania North West Africa 425680 </p>
-              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] flex items-center gap-3 dark:text-white"><span><LuPhone/></span>41165116</p>
-              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] flex items-center gap-3 dark:text-white"><span><IoMdMail/></span>mail@dvjnv</p>
+              <p className="text-[#080C2E] text-[23px] lg:text-[46px] font-semibold dark:text-white">
+                Contact Information
+              </p>
+              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] flex items-center gap-3 dark:text-white">
+                <span>
+                  <ImLocation />
+                </span>
+                #7th Street, abc , Mauritania North West Africa 425680{" "}
+              </p>
+              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] flex items-center gap-3 dark:text-white">
+                <span>
+                  <LuPhone />
+                </span>
+                41165116
+              </p>
+              <p className="text-[#080C2E] text-[14px] lg:text-[16px] font-normal leading-[32px] flex items-center gap-3 dark:text-white">
+                <span>
+                  <IoMdMail />
+                </span>
+                mail@dvjnv
+              </p>
             </div>
             <div>
               <div className="w-auto lg:w-[600px]">
-                <p className="pb-3 text-[#080C2E] dark:text-[#fff] text-[20px]">Trusted by</p>
-                <ImageScroll/>
+                <p className="pb-3 text-[#080C2E] dark:text-[#fff] text-[20px]">
+                  Trusted by
+                </p>
+                <ImageScroll />
               </div>
             </div>
           </div>
