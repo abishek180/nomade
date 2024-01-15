@@ -8,7 +8,7 @@ import ImageScroll from "@/components/imagescroll";
 import { ImLocation } from "react-icons/im";
 import { LuPhone } from "react-icons/lu";
 import { IoMdMail } from "react-icons/io";
-import Modal from "/components/Modal"
+
 
 function Contact() {
   const [message, setMessage] = useState("");
@@ -49,12 +49,10 @@ function Contact() {
             if (result.status === 200) {
               setMessage(
                 <div className="flex flex-col justify-center items-center gap-2">
-                  <span className="text-[green] text-center">
+                  <span className="text-[#E5B250] text-center">
                     Thanks for getting in touch. Our team will contact you
                     within 48 hours.
                   </span>
-                  <Modal/>
-                 
                 </div>
               );
             }
