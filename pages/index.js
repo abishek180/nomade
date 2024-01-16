@@ -276,8 +276,8 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="h-full p-2 lg:h-[252.679px] shadow-xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
-              <div className="w-full rounded-[21px] overflow-hidden">
+            <div className="h-full p-2 lg:h-[252.679px] shadow-xl flex flex-col justify-between items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
+              <div className="w-full rounded-[14px] overflow-hidden">
                 <Image
                   src={png1}
                   className=" object-cover object-center w-full h-full"
@@ -290,8 +290,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="h-full p-2 lg:h-[252.679px] shadow-xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
-              <div className="w-full rounded-[21px] overflow-hidden">
+            <div className="h-full p-2 lg:h-[252.679px] shadow-xl flex flex-col justify-between items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
+              <div className="w-full rounded-[14px] overflow-hidden">
                 <Image
                   src={png2}
                   className=" object-cover object-center w-full h-full"
@@ -304,8 +304,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="h-full p-2 lg:h-[252.679px] shadow-xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
-              <div className="w-full rounded-[21px] overflow-hidden">
+            <div className="h-full p-2 lg:h-[252.679px] shadow-xl flex flex-col justify-between items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
+              <div className="w-full rounded-[14px] overflow-hidden">
                 <Image
                   src={png3}
                   className=" object-cover object-center w-full h-full"
@@ -318,8 +318,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="h-full p-2 lg:h-[252.679px] shadow-xl flex flex-col justify-center items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
-              <div className="w-full rounded-[21px] overflow-hidden">
+            <div className="h-full p-2 lg:h-[252.679px] shadow-xl flex flex-col justify-between items-center gap-5 border-2 border-[#fff] hover:border-2 hover:border-[#F87B50] hover:duration-300 rounded-[21px] dark:border-black dark:bg-white/15">
+              <div className="w-full rounded-[14px] overflow-hidden">
                 <Image
                   src={png4}
                   className=" object-cover object-center w-full h-full"
